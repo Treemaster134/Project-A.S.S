@@ -131,34 +131,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Main Camera
       objectReference: {fileID: 0}
-    - target: {fileID: 2997445206999986090, guid: 71c4d7f0d86ba8a40b55880171c02e44, type: 3}
-      propertyPath: field of view
-      value: 60
-      objectReference: {fileID: 0}
-    - target: {fileID: 2997445206999986090, guid: 71c4d7f0d86ba8a40b55880171c02e44, type: 3}
-      propertyPath: m_FocalLength
-      value: 13.858139
-      objectReference: {fileID: 0}
-    - target: {fileID: 2997445206999986090, guid: 71c4d7f0d86ba8a40b55880171c02e44, type: 3}
-      propertyPath: far clip plane
-      value: 188.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2997445206999986090, guid: 71c4d7f0d86ba8a40b55880171c02e44, type: 3}
-      propertyPath: m_SensorSize.x
-      value: 21.946
-      objectReference: {fileID: 0}
-    - target: {fileID: 2997445206999986090, guid: 71c4d7f0d86ba8a40b55880171c02e44, type: 3}
-      propertyPath: m_SensorSize.y
-      value: 16.002
-      objectReference: {fileID: 0}
-    - target: {fileID: 2997445206999986090, guid: 71c4d7f0d86ba8a40b55880171c02e44, type: 3}
-      propertyPath: near clip plane
-      value: 0.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2997445206999986090, guid: 71c4d7f0d86ba8a40b55880171c02e44, type: 3}
-      propertyPath: m_projectionMatrixMode
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4320870996633641981, guid: 71c4d7f0d86ba8a40b55880171c02e44, type: 3}
       propertyPath: m_LocalPosition.x
       value: 31.96198
@@ -567,25 +539,9 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3842986839449781184, guid: d23ba77ed0b26ba428092f97763b3760, type: 3}
-      propertyPath: Lens.FarClipPlane
-      value: 188.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 3842986839449781184, guid: d23ba77ed0b26ba428092f97763b3760, type: 3}
       propertyPath: Target.TrackingTarget
       value: 
       objectReference: {fileID: 1122319808}
-    - target: {fileID: 8274401131733665147, guid: d23ba77ed0b26ba428092f97763b3760, type: 3}
-      propertyPath: ShoulderOffset.x
-      value: -0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8274401131733665147, guid: d23ba77ed0b26ba428092f97763b3760, type: 3}
-      propertyPath: ShoulderOffset.y
-      value: 0.73
-      objectReference: {fileID: 0}
-    - target: {fileID: 8274401131733665147, guid: d23ba77ed0b26ba428092f97763b3760, type: 3}
-      propertyPath: ShoulderOffset.z
-      value: -3.32
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -764,17 +720,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 276155361320629375, guid: bf9a4d9c3d3d71a4ea7ecfa61da7815d, type: 3}
-      propertyPath: m_UseGravity
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 3363686461194453345, guid: bf9a4d9c3d3d71a4ea7ecfa61da7815d, type: 3}
       propertyPath: m_Name
       value: Car
-      objectReference: {fileID: 0}
-    - target: {fileID: 3363686461194453345, guid: bf9a4d9c3d3d71a4ea7ecfa61da7815d, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3788855681087853217, guid: bf9a4d9c3d3d71a4ea7ecfa61da7815d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1049,46 +997,6 @@ PrefabInstance:
     - target: {fileID: 2156676799999085561, guid: 308065ee0c0f4114a8ef3f6621bc8412, type: 3}
       propertyPath: m_Name
       value: Terrain
-      objectReference: {fileID: 0}
-    - target: {fileID: 2156676799999085561, guid: 308065ee0c0f4114a8ef3f6621bc8412, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 127
-      objectReference: {fileID: 0}
-    - target: {fileID: 3928063291175868330, guid: 308065ee0c0f4114a8ef3f6621bc8412, type: 3}
-      propertyPath: m_TreeDistance
-      value: 374
-      objectReference: {fileID: 0}
-    - target: {fileID: 3928063291175868330, guid: 308065ee0c0f4114a8ef3f6621bc8412, type: 3}
-      propertyPath: m_DrawInstanced
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3928063291175868330, guid: 308065ee0c0f4114a8ef3f6621bc8412, type: 3}
-      propertyPath: m_TreeCrossFadeLength
-      value: 25
-      objectReference: {fileID: 0}
-    - target: {fileID: 3928063291175868330, guid: 308065ee0c0f4114a8ef3f6621bc8412, type: 3}
-      propertyPath: m_DetailObjectDistance
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3928063291175868330, guid: 308065ee0c0f4114a8ef3f6621bc8412, type: 3}
-      propertyPath: m_IgnoreQualitySettings
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3928063291175868330, guid: 308065ee0c0f4114a8ef3f6621bc8412, type: 3}
-      propertyPath: m_TreeBillboardDistance
-      value: 304
-      objectReference: {fileID: 0}
-    - target: {fileID: 3928063291175868330, guid: 308065ee0c0f4114a8ef3f6621bc8412, type: 3}
-      propertyPath: m_BakeLightProbesForTrees
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3928063291175868330, guid: 308065ee0c0f4114a8ef3f6621bc8412, type: 3}
-      propertyPath: m_TreeMaximumFullLODCount
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 3928063291175868330, guid: 308065ee0c0f4114a8ef3f6621bc8412, type: 3}
-      propertyPath: m_EnableHeightmapRayTracing
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9128346834013535063, guid: 308065ee0c0f4114a8ef3f6621bc8412, type: 3}
       propertyPath: m_LocalPosition.x
