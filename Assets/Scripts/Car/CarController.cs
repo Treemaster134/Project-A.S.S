@@ -39,14 +39,15 @@ public class CarController : MonoBehaviour
             }
         }
     }
-    public Vector2 GetMovementInput(InputAction.CallbackContext context)
+
+    public void Move(InputAction.CallbackContext context)
     {
         // Köra fram/bak
         if (context.ReadValue<Vector2>().y != 0)
         {
             for (int i = 0; i < wheels.Length; i++)
             {
-              wheels[i]._col.motorTorque = motorforce * context.ReadValue<Vector2>().y;
+                wheels[i]._col.motorTorque = motorforce * context.ReadValue<Vector2>().y;
             }
         }
         // Sida 
@@ -57,7 +58,11 @@ public class CarController : MonoBehaviour
                 wheels[i]._col.steerAngle = context.ReadValue<Vector2>().x * maxSteerAngle;
             }
         }
-        
-        return context.ReadValue<Vector2>();
+
+    }
+    public Vector2 GetMovementInput()
+    {
+       
+        return Vector2.zero;
     }
 }
