@@ -7,6 +7,9 @@ public class CarController : MonoBehaviour
 {
     private Rigidbody rb;
     [SerializeField]private WheelController[] wheels;
+    [SerializeField]private MultiplierComponent Engine;
+    [SerializeField]private MultiplierComponent QPanelFL;
+    [SerializeField]private MultiplierComponent QPanelFR;
 
     [SerializeField]private float motorforce = 10;
     [SerializeField]private float brakeforce = 10;
