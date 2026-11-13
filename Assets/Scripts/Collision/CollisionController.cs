@@ -1,27 +1,38 @@
+using System;
 using UnityEngine;
 
 [RequireComponent(typeof(CarController)), RequireComponent(typeof(Rigidbody))]
 public class CollisionController : MonoBehaviour
 {
     [SerializeField] private int MaxHitsPerCollision;
-    private CarComponent component = null;
-    private bool registeredHit = false;
-    
-    // Update is called once per frame
+    private CarComponent[] components;
+    private int registrations = 0;
+
+    private void Start()
+    {
+        components = new CarComponent[MaxHitsPerCollision];
+    }
+
     void Update()
     {
-        if (registeredHit)
+        if (registrations >= 0)
         {
-            component.Hit();
-            component = null;
-            registeredHit = false;
+            for (int i = 0; i < registrations; i++)
+            {
+                components[i].Hit();
+            }
+
+            registrations = 0;
         }
     }
 
     public void RegisterCollision(CarComponent component)
     {
-        registeredHit = true;
-        this.component = component;
+        if (registrations < MaxHitsPerCollision)
+        {
+            Debug.Log($"Register Collision, Total: {registrations}");
+            components[registrations++] = component;
+        }
     }
     
 }
