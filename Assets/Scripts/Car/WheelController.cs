@@ -14,8 +14,9 @@ public class WheelController : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    public void Update()
     {
-        
+        _model.position = _col.transform.position;
+        _model.rotation = _col.transform.rotation;
     }
 }

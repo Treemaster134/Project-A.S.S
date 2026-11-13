@@ -7,9 +7,9 @@ public class CarController : MonoBehaviour
 {
     private Rigidbody rb;
     private WheelController[] wheels;
-    
-    //float motorforce = hur stark motorn är
-    //float breakforce = hurtarka bromsarna är
+
+    private float motorforce = 10;
+    private float brakeforce = 10;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -23,8 +23,31 @@ public class CarController : MonoBehaviour
         
     }
 
+    public void Brake(InputAction.CallbackContext context)
+    {
+        for (int i = 0; i < wheels.Length; i++)
+        {
+            wheels[i]._col.brakeTorque = 0;
+        }
+    }
     public Vector2 GetMovementInput(InputAction.CallbackContext context)
     {
+        if (context.ReadValue<Vector2>().y != 0)
+        {
+            for (int i = 0; i < wheels.Length; i++)
+            {
+              wheels[i]._col.motorTorque = motorforce * context.ReadValue<Vector2>().y;
+            }
+        }
+
+        if (context.ReadValue<Vector2>().x != 0)
+        {
+            for (int i = 0; i < wheels.Length; i++)
+            {
+                wheels[i]._col.steerAngle = 1;
+            }
+        }
+        
         return context.ReadValue<Vector2>();
     }
 }
