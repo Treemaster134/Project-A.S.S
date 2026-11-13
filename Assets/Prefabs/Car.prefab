@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6636398633751476393}
   - component: {fileID: 9129775209255506875}
   - component: {fileID: 2372184743819770127}
+  - component: {fileID: 4322018100617615781}
   m_Layer: 0
   m_Name: Door tl
   m_TagString: Untagged
@@ -106,13 +107,27 @@ MeshCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 5
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &4322018100617615781
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 158257483571129220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f0313eb52447fe4bbdef40bb44e07df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CarComponent
+  health: 1
+  collisionController: {fileID: 9110410266049407309}
 --- !u!1 &557517465073588626
 GameObject:
   m_ObjectHideFlags: 0
@@ -223,7 +238,7 @@ MeshCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 5
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &633627994196147323
@@ -328,6 +343,7 @@ GameObject:
   - component: {fileID: 433346795807356284}
   - component: {fileID: 3709336260271992780}
   - component: {fileID: 4274411023780774597}
+  - component: {fileID: 1519883010258064195}
   m_Layer: 0
   m_Name: Sidopanel tl
   m_TagString: Untagged
@@ -422,13 +438,27 @@ MeshCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 5
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1519883010258064195
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 689329232062776397}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f0313eb52447fe4bbdef40bb44e07df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CarComponent
+  health: 1
+  collisionController: {fileID: 9110410266049407309}
 --- !u!1 &817189335830349093
 GameObject:
   m_ObjectHideFlags: 0
@@ -441,6 +471,7 @@ GameObject:
   - component: {fileID: 5602305018914130116}
   - component: {fileID: 1505389333283411561}
   - component: {fileID: 1165172119865732457}
+  - component: {fileID: 2208837670319870698}
   m_Layer: 0
   m_Name: Sidopanel bl
   m_TagString: Untagged
@@ -535,13 +566,27 @@ MeshCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 5
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2208837670319870698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 817189335830349093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f0313eb52447fe4bbdef40bb44e07df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CarComponent
+  health: 1
+  collisionController: {fileID: 9110410266049407309}
 --- !u!1 &979002643889704963
 GameObject:
   m_ObjectHideFlags: 0
@@ -813,7 +858,7 @@ MeshCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 5
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &2063665795103554396
@@ -899,6 +944,7 @@ GameObject:
   - component: {fileID: 8923759019442639356}
   - component: {fileID: 161485369096113006}
   - component: {fileID: 6005286976239633502}
+  - component: {fileID: 2090637424937086129}
   m_Layer: 0
   m_Name: Door tr
   m_TagString: Untagged
@@ -993,13 +1039,27 @@ MeshCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 5
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2090637424937086129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2639300746015222633}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f0313eb52447fe4bbdef40bb44e07df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CarComponent
+  health: 1
+  collisionController: {fileID: 9110410266049407309}
 --- !u!1 &2916123617364029110
 GameObject:
   m_ObjectHideFlags: 0
@@ -1012,6 +1072,7 @@ GameObject:
   - component: {fileID: 1445532102002567776}
   - component: {fileID: 3060093392074669117}
   - component: {fileID: 2611788030850579691}
+  - component: {fileID: 3091451383691206803}
   m_Layer: 0
   m_Name: Sidopanel tr
   m_TagString: Untagged
@@ -1106,13 +1167,27 @@ MeshCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 5
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &3091451383691206803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2916123617364029110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f0313eb52447fe4bbdef40bb44e07df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CarComponent
+  health: 1
+  collisionController: {fileID: 9110410266049407309}
 --- !u!1 &3058024463288117545
 GameObject:
   m_ObjectHideFlags: 0
@@ -1194,6 +1269,8 @@ GameObject:
   m_Component:
   - component: {fileID: 3788855681087853217}
   - component: {fileID: 276155361320629375}
+  - component: {fileID: 5326437211776036824}
+  - component: {fileID: 9110410266049407309}
   m_Layer: 0
   m_Name: Car
   m_TagString: Untagged
@@ -1265,6 +1342,31 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &5326437211776036824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3363686461194453345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0af2a4269743eb240acd1cb9a0d7b1a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CarController
+--- !u!114 &9110410266049407309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3363686461194453345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcd16bb252bbcc4478458917fd5a5ad8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CollisionController
+  MaxHitsPerCollision: 1
 --- !u!1 &3404569049537473356
 GameObject:
   m_ObjectHideFlags: 0
@@ -1465,7 +1567,7 @@ MeshCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 5
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &4981525783747356186
@@ -1480,6 +1582,7 @@ GameObject:
   - component: {fileID: 3498450028886575353}
   - component: {fileID: 5613958961139349779}
   - component: {fileID: 3441633781053914082}
+  - component: {fileID: 5073102842241417969}
   m_Layer: 0
   m_Name: Door bl
   m_TagString: Untagged
@@ -1574,13 +1677,27 @@ MeshCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 5
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &5073102842241417969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4981525783747356186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f0313eb52447fe4bbdef40bb44e07df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CarComponent
+  health: 1
+  collisionController: {fileID: 9110410266049407309}
 --- !u!1 &5002120563847189406
 GameObject:
   m_ObjectHideFlags: 0
@@ -1754,6 +1871,7 @@ GameObject:
   - component: {fileID: 630290646638355235}
   - component: {fileID: 6393611513915064030}
   - component: {fileID: 833801892548059808}
+  - component: {fileID: 7538901267552228615}
   m_Layer: 0
   m_Name: Sidopanel br
   m_TagString: Untagged
@@ -1848,13 +1966,27 @@ MeshCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 5
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &7538901267552228615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6756637726711502860}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f0313eb52447fe4bbdef40bb44e07df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CarComponent
+  health: 1
+  collisionController: {fileID: 9110410266049407309}
 --- !u!1 &7148587097111589588
 GameObject:
   m_ObjectHideFlags: 0
@@ -1867,6 +1999,7 @@ GameObject:
   - component: {fileID: 8060366025561125708}
   - component: {fileID: 6869371902626490663}
   - component: {fileID: 3864805907779010911}
+  - component: {fileID: 1733042090939454510}
   m_Layer: 0
   m_Name: Tak
   m_TagString: Untagged
@@ -1961,13 +2094,27 @@ MeshCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 5
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1733042090939454510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7148587097111589588}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f0313eb52447fe4bbdef40bb44e07df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CarComponent
+  health: 1
+  collisionController: {fileID: 9110410266049407309}
 --- !u!1 &7587148670812248732
 GameObject:
   m_ObjectHideFlags: 0
@@ -1980,6 +2127,7 @@ GameObject:
   - component: {fileID: 6230025357262183653}
   - component: {fileID: 785235208575130205}
   - component: {fileID: 3054505599454038765}
+  - component: {fileID: 4382389631696054727}
   m_Layer: 0
   m_Name: Baklucka
   m_TagString: Untagged
@@ -2074,13 +2222,27 @@ MeshCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 5
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &4382389631696054727
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7587148670812248732}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f0313eb52447fe4bbdef40bb44e07df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CarComponent
+  health: 1
+  collisionController: {fileID: 9110410266049407309}
 --- !u!1 &7843498398345610453
 GameObject:
   m_ObjectHideFlags: 0
@@ -2093,6 +2255,7 @@ GameObject:
   - component: {fileID: 9034905079627323352}
   - component: {fileID: 2057701969924903392}
   - component: {fileID: 841755664270997034}
+  - component: {fileID: 8710448347456685591}
   m_Layer: 0
   m_Name: Door br
   m_TagString: Untagged
@@ -2187,13 +2350,27 @@ MeshCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 5
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &8710448347456685591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7843498398345610453}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f0313eb52447fe4bbdef40bb44e07df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CarComponent
+  health: 1
+  collisionController: {fileID: 9110410266049407309}
 --- !u!1 &8485132802908176708
 GameObject:
   m_ObjectHideFlags: 0
@@ -2206,6 +2383,7 @@ GameObject:
   - component: {fileID: 7844427576770243823}
   - component: {fileID: 5178323830552025828}
   - component: {fileID: 4329598394653612418}
+  - component: {fileID: 4997104466646271307}
   m_Layer: 0
   m_Name: Motorrrrr
   m_TagString: Untagged
@@ -2300,10 +2478,24 @@ MeshCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 5
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &4997104466646271307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8485132802908176708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f0313eb52447fe4bbdef40bb44e07df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CarComponent
+  health: 1
+  collisionController: {fileID: 9110410266049407309}

@@ -7,7 +7,7 @@ public class CarComponent : MonoBehaviour
     [SerializeField] private int health;
     [SerializeField] private CollisionController collisionController;
 
-    private void OnCollisionEnter(Collision other)
+    private void OnTriggerEnter(Collider other)
     {
         collisionController.RegisterCollision(this);
     }
