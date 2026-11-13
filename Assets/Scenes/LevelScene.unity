@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 97637a2a763b7f24b8da4e139e4144ca, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -130,6 +130,22 @@ PrefabInstance:
     - target: {fileID: 471957136394793193, guid: 71c4d7f0d86ba8a40b55880171c02e44, type: 3}
       propertyPath: m_Name
       value: Main Camera
+      objectReference: {fileID: 0}
+    - target: {fileID: 2997445206999986090, guid: 71c4d7f0d86ba8a40b55880171c02e44, type: 3}
+      propertyPath: m_ClearFlags
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2997445206999986090, guid: 71c4d7f0d86ba8a40b55880171c02e44, type: 3}
+      propertyPath: m_BackGroundColor.b
+      value: 0.09433961
+      objectReference: {fileID: 0}
+    - target: {fileID: 2997445206999986090, guid: 71c4d7f0d86ba8a40b55880171c02e44, type: 3}
+      propertyPath: m_BackGroundColor.g
+      value: 0.057083372
+      objectReference: {fileID: 0}
+    - target: {fileID: 2997445206999986090, guid: 71c4d7f0d86ba8a40b55880171c02e44, type: 3}
+      propertyPath: m_BackGroundColor.r
+      value: 0.03337486
       objectReference: {fileID: 0}
     - target: {fileID: 4320870996633641981, guid: 71c4d7f0d86ba8a40b55880171c02e44, type: 3}
       propertyPath: m_LocalPosition.x
@@ -997,6 +1013,22 @@ PrefabInstance:
     - target: {fileID: 2156676799999085561, guid: 308065ee0c0f4114a8ef3f6621bc8412, type: 3}
       propertyPath: m_Name
       value: Terrain
+      objectReference: {fileID: 0}
+    - target: {fileID: 3928063291175868330, guid: 308065ee0c0f4114a8ef3f6621bc8412, type: 3}
+      propertyPath: m_TreeDistance
+      value: 535
+      objectReference: {fileID: 0}
+    - target: {fileID: 3928063291175868330, guid: 308065ee0c0f4114a8ef3f6621bc8412, type: 3}
+      propertyPath: m_TreeCrossFadeLength
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 3928063291175868330, guid: 308065ee0c0f4114a8ef3f6621bc8412, type: 3}
+      propertyPath: m_TreeBillboardDistance
+      value: 240
+      objectReference: {fileID: 0}
+    - target: {fileID: 3928063291175868330, guid: 308065ee0c0f4114a8ef3f6621bc8412, type: 3}
+      propertyPath: m_TreeMaximumFullLODCount
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 9128346834013535063, guid: 308065ee0c0f4114a8ef3f6621bc8412, type: 3}
       propertyPath: m_LocalPosition.x
