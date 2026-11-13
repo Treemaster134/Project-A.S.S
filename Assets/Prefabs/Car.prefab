@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 6636398633751476393}
   - component: {fileID: 9129775209255506875}
   - component: {fileID: 2372184743819770127}
-  - component: {fileID: 4322018100617615781}
+  - component: {fileID: 562407490662893933}
   m_Layer: 0
-  m_Name: Door tl
+  m_Name: Door FL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -114,7 +114,7 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &4322018100617615781
+--- !u!114 &562407490662893933
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -123,11 +123,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 158257483571129220}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f0313eb52447fe4bbdef40bb44e07df, type: 3}
+  m_Script: {fileID: 11500000, guid: d434250b5b9ca8440a10cb618d6d5326, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CarComponent
-  health: 1
+  m_EditorClassIdentifier: Assembly-CSharp::BreakableComponent
   collisionController: {fileID: 9110410266049407309}
+  health: 1
 --- !u!1 &557517465073588626
 GameObject:
   m_ObjectHideFlags: 0
@@ -156,8 +156,8 @@ Transform:
   m_GameObject: {fileID: 557517465073588626}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.70686835, z: -0, w: 0.70734507}
-  m_LocalPosition: {x: -0.571557, y: 0.37900004, z: 1.4551616}
-  m_LocalScale: {x: 2.1603, y: 1.0839, z: 1.2605301}
+  m_LocalPosition: {x: -0.571557, y: 0.07, z: 1.4551616}
+  m_LocalScale: {x: 4.08, y: 1.0839, z: 1.2605301}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3788855681087853217}
@@ -253,7 +253,7 @@ GameObject:
   - component: {fileID: 6096894638661342611}
   - component: {fileID: 2640220959166575010}
   m_Layer: 0
-  m_Name: Wheel br
+  m_Name: Wheel RR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -343,9 +343,9 @@ GameObject:
   - component: {fileID: 433346795807356284}
   - component: {fileID: 3709336260271992780}
   - component: {fileID: 4274411023780774597}
-  - component: {fileID: 1519883010258064195}
+  - component: {fileID: 8163309649922115832}
   m_Layer: 0
-  m_Name: Sidopanel tl
+  m_Name: QPanel FL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -360,7 +360,7 @@ Transform:
   m_GameObject: {fileID: 689329232062776397}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.70686835, z: -0, w: 0.70734507}
-  m_LocalPosition: {x: 0.03736118, y: 0, z: -0.18956974}
+  m_LocalPosition: {x: 0.096, y: 0, z: -0.19}
   m_LocalScale: {x: 0.5961, y: 1, z: 0.0409}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -445,7 +445,7 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &1519883010258064195
+--- !u!114 &8163309649922115832
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -454,11 +454,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 689329232062776397}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f0313eb52447fe4bbdef40bb44e07df, type: 3}
+  m_Script: {fileID: 11500000, guid: 790668c15483b5449a0a1bac330aea68, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CarComponent
-  health: 1
+  m_EditorClassIdentifier: Assembly-CSharp::MultiplierComponent
   collisionController: {fileID: 9110410266049407309}
+  multiplier: 1
+  MultiplierDelta: 0
+  MultiplierUpperBound: 0
+  MultiplierLowerBound: 0
 --- !u!1 &817189335830349093
 GameObject:
   m_ObjectHideFlags: 0
@@ -471,9 +474,9 @@ GameObject:
   - component: {fileID: 5602305018914130116}
   - component: {fileID: 1505389333283411561}
   - component: {fileID: 1165172119865732457}
-  - component: {fileID: 2208837670319870698}
+  - component: {fileID: 2908032199306305509}
   m_Layer: 0
-  m_Name: Sidopanel bl
+  m_Name: QPanel RL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -573,7 +576,7 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &2208837670319870698
+--- !u!114 &2908032199306305509
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -582,11 +585,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 817189335830349093}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f0313eb52447fe4bbdef40bb44e07df, type: 3}
+  m_Script: {fileID: 11500000, guid: d434250b5b9ca8440a10cb618d6d5326, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CarComponent
-  health: 1
+  m_EditorClassIdentifier: Assembly-CSharp::BreakableComponent
   collisionController: {fileID: 9110410266049407309}
+  health: 1
 --- !u!1 &979002643889704963
 GameObject:
   m_ObjectHideFlags: 0
@@ -599,7 +602,7 @@ GameObject:
   - component: {fileID: 3346803405934117106}
   - component: {fileID: 6922253091499455356}
   m_Layer: 0
-  m_Name: Wheel bl
+  m_Name: Wheel RL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -688,7 +691,7 @@ GameObject:
   - component: {fileID: 3201177609993023097}
   - component: {fileID: 5496780922351659221}
   m_Layer: 0
-  m_Name: Wheel br Collider
+  m_Name: Wheel FR Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -748,119 +751,6 @@ WheelCollider:
   m_LayerOverridePriority: 0
   m_Enabled: 1
   m_ProvidesContacts: 0
---- !u!1 &1391064685013996011
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 6139396009899594652}
-  - component: {fileID: 4775649575226905750}
-  - component: {fileID: 4503226836018741330}
-  - component: {fileID: 3075136757851929160}
-  m_Layer: 0
-  m_Name: bak
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &6139396009899594652
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1391064685013996011}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.70686835, z: -0, w: 0.70734507}
-  m_LocalPosition: {x: -0.61088735, y: 0, z: 3.1100936}
-  m_LocalScale: {x: 0.89779556, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 3788855681087853217}
-  m_LocalEulerAnglesHint: {x: 0, y: 89.961, z: 0}
---- !u!33 &4775649575226905750
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1391064685013996011}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!23 &4503226836018741330
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1391064685013996011}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_ForceMeshLod: -1
-  m_MeshLodSelectionBias: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_MaskInteraction: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &3075136757851929160
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1391064685013996011}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &2063665795103554396
 GameObject:
   m_ObjectHideFlags: 0
@@ -872,7 +762,7 @@ GameObject:
   - component: {fileID: 7351623614400502114}
   - component: {fileID: 791532281131176946}
   m_Layer: 0
-  m_Name: Wheel tl Collider
+  m_Name: Wheel FL Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -944,9 +834,9 @@ GameObject:
   - component: {fileID: 8923759019442639356}
   - component: {fileID: 161485369096113006}
   - component: {fileID: 6005286976239633502}
-  - component: {fileID: 2090637424937086129}
+  - component: {fileID: 1430377527684538380}
   m_Layer: 0
-  m_Name: Door tr
+  m_Name: Door FR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1046,7 +936,7 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &2090637424937086129
+--- !u!114 &1430377527684538380
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1055,11 +945,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 2639300746015222633}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f0313eb52447fe4bbdef40bb44e07df, type: 3}
+  m_Script: {fileID: 11500000, guid: d434250b5b9ca8440a10cb618d6d5326, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CarComponent
-  health: 1
+  m_EditorClassIdentifier: Assembly-CSharp::BreakableComponent
   collisionController: {fileID: 9110410266049407309}
+  health: 1
 --- !u!1 &2916123617364029110
 GameObject:
   m_ObjectHideFlags: 0
@@ -1072,9 +962,9 @@ GameObject:
   - component: {fileID: 1445532102002567776}
   - component: {fileID: 3060093392074669117}
   - component: {fileID: 2611788030850579691}
-  - component: {fileID: 3091451383691206803}
+  - component: {fileID: 6397664828564022668}
   m_Layer: 0
-  m_Name: Sidopanel tr
+  m_Name: QPanel FR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1174,7 +1064,7 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &3091451383691206803
+--- !u!114 &6397664828564022668
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1183,11 +1073,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 2916123617364029110}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f0313eb52447fe4bbdef40bb44e07df, type: 3}
+  m_Script: {fileID: 11500000, guid: 790668c15483b5449a0a1bac330aea68, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CarComponent
-  health: 1
+  m_EditorClassIdentifier: Assembly-CSharp::MultiplierComponent
   collisionController: {fileID: 9110410266049407309}
+  multiplier: 1
+  MultiplierDelta: 0
+  MultiplierUpperBound: 0
+  MultiplierLowerBound: 0
 --- !u!1 &3058024463288117545
 GameObject:
   m_ObjectHideFlags: 0
@@ -1199,7 +1092,7 @@ GameObject:
   - component: {fileID: 8222204105704944928}
   - component: {fileID: 530617632593000271}
   m_Layer: 0
-  m_Name: Wheel bl Collider
+  m_Name: Wheel RL Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1295,20 +1188,18 @@ Transform:
   - {fileID: 1442653277665573789}
   - {fileID: 6657005380619794323}
   - {fileID: 2760713308314920442}
-  - {fileID: 7351623614400502114}
-  - {fileID: 8222204105704944928}
-  - {fileID: 7887439341314632548}
   - {fileID: 3201177609993023097}
+  - {fileID: 7351623614400502114}
+  - {fileID: 7887439341314632548}
+  - {fileID: 8222204105704944928}
   - {fileID: 4096247946393024185}
-  - {fileID: 7884800859366512411}
   - {fileID: 3665921057285906997}
   - {fileID: 2861234399205811789}
-  - {fileID: 7977270278220494406}
   - {fileID: 1634829685168495026}
+  - {fileID: 7977270278220494406}
   - {fileID: 8575568059148616521}
+  - {fileID: 267042496997100315}
   - {fileID: 869226996441980838}
-  - {fileID: 2659912097310376961}
-  - {fileID: 6139396009899594652}
   - {fileID: 5948982207517561638}
   - {fileID: 678992548050503127}
   - {fileID: 6859289281986779238}
@@ -1379,7 +1270,7 @@ GameObject:
   - component: {fileID: 3304125422216753260}
   - component: {fileID: 1832491659385610369}
   m_Layer: 0
-  m_Name: Wheel tr
+  m_Name: Wheel FR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1457,119 +1348,6 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!1 &4238231464334425547
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2659912097310376961}
-  - component: {fileID: 2222889191027382468}
-  - component: {fileID: 8467755456547607300}
-  - component: {fileID: 5295292045202301679}
-  m_Layer: 0
-  m_Name: Fram
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2659912097310376961
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4238231464334425547}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.70686835, z: -0, w: 0.70734507}
-  m_LocalPosition: {x: -0.60867935, y: 0, z: -0.15311164}
-  m_LocalScale: {x: 0.89779556, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 3788855681087853217}
-  m_LocalEulerAnglesHint: {x: 0, y: 89.961, z: 0}
---- !u!33 &2222889191027382468
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4238231464334425547}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!23 &8467755456547607300
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4238231464334425547}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_ForceMeshLod: -1
-  m_MeshLodSelectionBias: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 9e02d927c148ab64f821b16b3e599b78, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_MaskInteraction: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &5295292045202301679
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4238231464334425547}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &4981525783747356186
 GameObject:
   m_ObjectHideFlags: 0
@@ -1582,9 +1360,9 @@ GameObject:
   - component: {fileID: 3498450028886575353}
   - component: {fileID: 5613958961139349779}
   - component: {fileID: 3441633781053914082}
-  - component: {fileID: 5073102842241417969}
+  - component: {fileID: 6177512770618618713}
   m_Layer: 0
-  m_Name: Door bl
+  m_Name: Door RL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1684,7 +1462,7 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &5073102842241417969
+--- !u!114 &6177512770618618713
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1693,11 +1471,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 4981525783747356186}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f0313eb52447fe4bbdef40bb44e07df, type: 3}
+  m_Script: {fileID: 11500000, guid: d434250b5b9ca8440a10cb618d6d5326, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CarComponent
-  health: 1
+  m_EditorClassIdentifier: Assembly-CSharp::BreakableComponent
   collisionController: {fileID: 9110410266049407309}
+  health: 1
 --- !u!1 &5002120563847189406
 GameObject:
   m_ObjectHideFlags: 0
@@ -1709,7 +1487,7 @@ GameObject:
   - component: {fileID: 7887439341314632548}
   - component: {fileID: 241057650001845873}
   m_Layer: 0
-  m_Name: Wheel br Collider
+  m_Name: Wheel RR Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1781,7 +1559,7 @@ GameObject:
   - component: {fileID: 1084100761843197330}
   - component: {fileID: 1473525973481445072}
   m_Layer: 0
-  m_Name: Wheel tl
+  m_Name: Wheel FL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1871,9 +1649,9 @@ GameObject:
   - component: {fileID: 630290646638355235}
   - component: {fileID: 6393611513915064030}
   - component: {fileID: 833801892548059808}
-  - component: {fileID: 7538901267552228615}
+  - component: {fileID: 2576981383168555383}
   m_Layer: 0
-  m_Name: Sidopanel br
+  m_Name: QPanel RR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1973,7 +1751,7 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &7538901267552228615
+--- !u!114 &2576981383168555383
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1982,12 +1760,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 6756637726711502860}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f0313eb52447fe4bbdef40bb44e07df, type: 3}
+  m_Script: {fileID: 11500000, guid: d434250b5b9ca8440a10cb618d6d5326, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CarComponent
-  health: 1
+  m_EditorClassIdentifier: Assembly-CSharp::BreakableComponent
   collisionController: {fileID: 9110410266049407309}
---- !u!1 &7148587097111589588
+  health: 1
+--- !u!1 &7253012489002861927
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1995,48 +1773,48 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7884800859366512411}
-  - component: {fileID: 8060366025561125708}
-  - component: {fileID: 6869371902626490663}
-  - component: {fileID: 3864805907779010911}
-  - component: {fileID: 1733042090939454510}
+  - component: {fileID: 267042496997100315}
+  - component: {fileID: 3318362700622499344}
+  - component: {fileID: 5826989576699401206}
+  - component: {fileID: 8237835191989721378}
+  - component: {fileID: 3288489296440947766}
   m_Layer: 0
-  m_Name: Tak
+  m_Name: Hood
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7884800859366512411
+--- !u!4 &267042496997100315
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7148587097111589588}
+  m_GameObject: {fileID: 7253012489002861927}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.70686835, z: -0, w: 0.70734507}
-  m_LocalPosition: {x: -0.571557, y: 0.96000004, z: 1.4551616}
-  m_LocalScale: {x: 2.1603, y: 0.05506212, z: 1.2605301}
+  m_LocalRotation: {x: 0.46884808, y: -0.52932173, z: -0.46884808, w: 0.52932173}
+  m_LocalPosition: {x: -0.59768397, y: 0.66400003, z: -0.21}
+  m_LocalScale: {x: 0.0162, y: 1, z: 1.0457}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3788855681087853217}
-  m_LocalEulerAnglesHint: {x: 0, y: 89.961, z: 0}
---- !u!33 &8060366025561125708
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: -83.066}
+--- !u!33 &3318362700622499344
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7148587097111589588}
+  m_GameObject: {fileID: 7253012489002861927}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!23 &6869371902626490663
+--- !u!23 &5826989576699401206
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7148587097111589588}
+  m_GameObject: {fileID: 7253012489002861927}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -2055,7 +1833,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 9e02d927c148ab64f821b16b3e599b78, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2079,13 +1857,13 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &3864805907779010911
+--- !u!64 &8237835191989721378
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7148587097111589588}
+  m_GameObject: {fileID: 7253012489002861927}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -2101,20 +1879,20 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &1733042090939454510
+--- !u!114 &3288489296440947766
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7148587097111589588}
+  m_GameObject: {fileID: 7253012489002861927}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f0313eb52447fe4bbdef40bb44e07df, type: 3}
+  m_Script: {fileID: 11500000, guid: d434250b5b9ca8440a10cb618d6d5326, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CarComponent
-  health: 1
+  m_EditorClassIdentifier: Assembly-CSharp::BreakableComponent
   collisionController: {fileID: 9110410266049407309}
+  health: 1
 --- !u!1 &7587148670812248732
 GameObject:
   m_ObjectHideFlags: 0
@@ -2127,9 +1905,9 @@ GameObject:
   - component: {fileID: 6230025357262183653}
   - component: {fileID: 785235208575130205}
   - component: {fileID: 3054505599454038765}
-  - component: {fileID: 4382389631696054727}
+  - component: {fileID: 3938344281228427639}
   m_Layer: 0
-  m_Name: Baklucka
+  m_Name: Rear Hatch
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2229,7 +2007,7 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &4382389631696054727
+--- !u!114 &3938344281228427639
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2238,11 +2016,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 7587148670812248732}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f0313eb52447fe4bbdef40bb44e07df, type: 3}
+  m_Script: {fileID: 11500000, guid: d434250b5b9ca8440a10cb618d6d5326, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CarComponent
-  health: 1
+  m_EditorClassIdentifier: Assembly-CSharp::BreakableComponent
   collisionController: {fileID: 9110410266049407309}
+  health: 1
 --- !u!1 &7843498398345610453
 GameObject:
   m_ObjectHideFlags: 0
@@ -2255,9 +2033,9 @@ GameObject:
   - component: {fileID: 9034905079627323352}
   - component: {fileID: 2057701969924903392}
   - component: {fileID: 841755664270997034}
-  - component: {fileID: 8710448347456685591}
+  - component: {fileID: 7459431015827039488}
   m_Layer: 0
-  m_Name: Door br
+  m_Name: Door RR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2357,7 +2135,7 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &8710448347456685591
+--- !u!114 &7459431015827039488
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2366,11 +2144,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 7843498398345610453}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f0313eb52447fe4bbdef40bb44e07df, type: 3}
+  m_Script: {fileID: 11500000, guid: d434250b5b9ca8440a10cb618d6d5326, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CarComponent
-  health: 1
+  m_EditorClassIdentifier: Assembly-CSharp::BreakableComponent
   collisionController: {fileID: 9110410266049407309}
+  health: 1
 --- !u!1 &8485132802908176708
 GameObject:
   m_ObjectHideFlags: 0
@@ -2383,9 +2161,9 @@ GameObject:
   - component: {fileID: 7844427576770243823}
   - component: {fileID: 5178323830552025828}
   - component: {fileID: 4329598394653612418}
-  - component: {fileID: 4997104466646271307}
+  - component: {fileID: 7631484339241281752}
   m_Layer: 0
-  m_Name: Motorrrrr
+  m_Name: Engine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2399,13 +2177,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8485132802908176708}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.5146026, y: 0.4846095, z: -0.51495045, w: 0.48493698}
-  m_LocalPosition: {x: -0.5954213, y: 0.551, z: -0.24000356}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -0.577, y: 0.065, z: -0.626}
   m_LocalScale: {x: 0.0162, y: 1, z: 1.0457}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3788855681087853217}
-  m_LocalEulerAnglesHint: {x: 0, y: 89.961, z: -93.439}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!33 &7844427576770243823
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -2485,7 +2263,7 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &4997104466646271307
+--- !u!114 &7631484339241281752
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2494,8 +2272,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 8485132802908176708}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f0313eb52447fe4bbdef40bb44e07df, type: 3}
+  m_Script: {fileID: 11500000, guid: 790668c15483b5449a0a1bac330aea68, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CarComponent
-  health: 1
-  collisionController: {fileID: 9110410266049407309}
+  m_EditorClassIdentifier: Assembly-CSharp::MultiplierComponent
+  collisionController: {fileID: 0}
+  multiplier: 0
+  MultiplierDelta: 0
+  MultiplierUpperBound: 0
+  MultiplierLowerBound: 0
