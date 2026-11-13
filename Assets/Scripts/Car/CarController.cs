@@ -6,15 +6,16 @@ using Vector2 = UnityEngine.Vector2;
 public class CarController : MonoBehaviour
 {
     private Rigidbody rb;
-    private WheelController[] wheels;
+    [SerializeField]private WheelController[] wheels;
 
-    private float motorforce = 10;
-    private float brakeforce = 10;
+    [SerializeField]private float motorforce = 10;
+    [SerializeField]private float brakeforce = 10;
+    [SerializeField]private float maxSteerAngle;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        rb = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
@@ -27,11 +28,20 @@ public class CarController : MonoBehaviour
     {
         for (int i = 0; i < wheels.Length; i++)
         {
-            wheels[i]._col.brakeTorque = 0;
+            wheels[i]._col.brakeTorque = brakeforce;
+        }
+
+        if (context.canceled)
+        {
+            for (int i = 0; i < wheels.Length; i++)
+            {
+                wheels[i]._col.brakeTorque = 0;
+            }
         }
     }
     public Vector2 GetMovementInput(InputAction.CallbackContext context)
     {
+        // Köra fram/bak
         if (context.ReadValue<Vector2>().y != 0)
         {
             for (int i = 0; i < wheels.Length; i++)
@@ -39,12 +49,12 @@ public class CarController : MonoBehaviour
               wheels[i]._col.motorTorque = motorforce * context.ReadValue<Vector2>().y;
             }
         }
-
+        // Sida 
         if (context.ReadValue<Vector2>().x != 0)
         {
             for (int i = 0; i < wheels.Length; i++)
             {
-                wheels[i]._col.steerAngle = 1;
+                wheels[i]._col.steerAngle = context.ReadValue<Vector2>().x * maxSteerAngle;
             }
         }
         
