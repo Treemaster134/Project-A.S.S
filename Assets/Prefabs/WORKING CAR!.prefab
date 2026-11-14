@@ -905,6 +905,7 @@ GameObject:
   - component: {fileID: 5185159951822540475}
   - component: {fileID: 8841903966019808365}
   - component: {fileID: 7223773322692884154}
+  - component: {fileID: 2878802703022549329}
   m_Layer: 0
   m_Name: WORKING CAR!
   m_TagString: Untagged
@@ -1032,6 +1033,19 @@ MonoBehaviour:
   baseRotationSpeed: 0
   maxRotationspeed: 0
   PCC: {fileID: 8841903966019808365}
+--- !u!114 &2878802703022549329
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8545987114250462898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcd16bb252bbcc4478458917fd5a5ad8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CollisionController
+  MaxHitsPerCollision: 0
 --- !u!1 &9042337259332398945
 GameObject:
   m_ObjectHideFlags: 0
