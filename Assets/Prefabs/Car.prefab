@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5496780922351659221}
   - component: {fileID: 6692636639548266898}
   m_Layer: 0
-  m_Name: Wheel FR Collider
+  m_Name: Wheel RR Collider
   m_TagString: Car
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -58,7 +58,7 @@ WheelCollider:
     m_AsymptoteValue: 0.5
     m_Stiffness: 1
   m_SidewaysFriction:
-    m_ExtremumSlip: 0.2
+    m_ExtremumSlip: 0.05
     m_ExtremumValue: 1
     m_AsymptoteSlip: 0.5
     m_AsymptoteValue: 0.75
@@ -144,7 +144,7 @@ WheelCollider:
     m_AsymptoteValue: 0.5
     m_Stiffness: 1
   m_SidewaysFriction:
-    m_ExtremumSlip: 0.2
+    m_ExtremumSlip: 0.05
     m_ExtremumValue: 1
     m_AsymptoteSlip: 0.5
     m_AsymptoteValue: 0.75
@@ -230,7 +230,7 @@ WheelCollider:
     m_AsymptoteValue: 0.5
     m_Stiffness: 1
   m_SidewaysFriction:
-    m_ExtremumSlip: 0.2
+    m_ExtremumSlip: 0.05
     m_ExtremumValue: 1
     m_AsymptoteSlip: 0.5
     m_AsymptoteValue: 0.75
@@ -335,10 +335,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CarController
   frontWheels:
   - {fileID: 5116488324842822924}
-  - {fileID: 6692636639548266898}
-  Engine: {fileID: 0}
-  QPanelFL: {fileID: 0}
-  QPanelFR: {fileID: 0}
+  - {fileID: 4587418078658511681}
+  Engine: {fileID: 1627844731737433994}
+  QPanelFL: {fileID: 9194433961774066393}
+  QPanelFR: {fileID: 670892076157304802}
   motorforce: 8000
   brakeforce: 4000
   maxSteerAngle: 40
@@ -503,7 +503,7 @@ GameObject:
   - component: {fileID: 241057650001845873}
   - component: {fileID: 4587418078658511681}
   m_Layer: 0
-  m_Name: Wheel RR Collider
+  m_Name: Wheel FR Collider
   m_TagString: Car
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -549,7 +549,7 @@ WheelCollider:
     m_AsymptoteValue: 0.5
     m_Stiffness: 1
   m_SidewaysFriction:
-    m_ExtremumSlip: 0.2
+    m_ExtremumSlip: 0.05
     m_ExtremumValue: 1
     m_AsymptoteSlip: 0.5
     m_AsymptoteValue: 0.75

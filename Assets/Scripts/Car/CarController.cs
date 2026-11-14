@@ -23,6 +23,8 @@ public class CarController : MonoBehaviour
 
     [Header("Acceleration")] 
     [SerializeField]private float accelerate = 10;
+
+   
     
     float currentMotorTorque;
     private float currentBrakeTorque;
@@ -33,19 +35,20 @@ public class CarController : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        
     }
 
     void Update()
     {
         float currentSpeed = Vector3.Dot(transform.forward, rb.linearVelocity);
         float speedFactor = Mathf.InverseLerp(0, maxSpeed, Mathf.Abs(currentSpeed));
-        if (movement.y == 0)
+        if (movement.y == 0 && currentMotorTorque == 0)
         {
             Debug.Log("Y 0");
-            currentMotorTorque = Mathf.Lerp(currentMotorTorque, 0, accelerate * 2);
+            currentMotorTorque = 0;
             currentBrakeTorque = 1000;
         }
-        else
+        else if (movement.y != 0)
         {
             currentMotorTorque = Mathf.Lerp(motorforce, motorforce * 2, accelerate);
             currentBrakeTorque = 0;
@@ -64,17 +67,12 @@ public class CarController : MonoBehaviour
 
     public void Brake(InputAction.CallbackContext context)
     {
-        for (int i = 0; i < frontWheels.Length; i++)
-        {
-            frontWheels[i]._col.brakeTorque = brakeforce;
-        }
+        currentBrakeTorque = brakeforce * 10;
+        currentMotorTorque = 0;
 
         if (context.canceled)
         {
-            for (int i = 0; i < frontWheels.Length; i++)
-            {
-                frontWheels[i]._col.brakeTorque = 0;
-            }
+            currentBrakeTorque = 0;
         }
     }
 
