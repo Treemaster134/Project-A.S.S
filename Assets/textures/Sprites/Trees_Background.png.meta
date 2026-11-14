@@ -126,9 +126,9 @@ TextureImporter:
       name: Trees_Background_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 190
         y: 0
-        width: 256
+        width: 66
         height: 141
       alignment: 9
       pivot: {x: 0.5, y: 0}
