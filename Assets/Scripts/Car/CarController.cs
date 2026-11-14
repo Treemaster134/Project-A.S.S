@@ -83,6 +83,13 @@ PCC.ResetSteeringAngle();
             PCC.InvokeRepeating("DecelerateCar", 0f, 0.1f);
             PCC.deceleratingCar = true;
         }
+
+
+        if(Input.GetKey(KeyCode.Space))
+        {
+            Debug.Log("Space pressed");
+            PCC.Handbrake();
+        }
    }
 }
 
