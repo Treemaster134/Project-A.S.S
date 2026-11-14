@@ -67,6 +67,7 @@ public class CarController : MonoBehaviour
                }
                else
                {
+                   Debug.Log(wheels[i]._col.rotationSpeed);
                    currentMotorTorque = Mathf.Lerp(motorforce, motorforce * 3, accelerate);
                    wheels[i]._col.motorTorque = currentMotorTorque * movement.y;
                    wheels[i]._col.brakeTorque = 0;
@@ -98,6 +99,7 @@ public class CarController : MonoBehaviour
        if (context.started)
        {
                rb.linearVelocity += Vector3.forward * context.ReadValue<Vector2>().y * baseSpeed;
+               
        }
       
        movement = context.ReadValue<Vector2>();
