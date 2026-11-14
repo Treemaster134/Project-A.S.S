@@ -1291,17 +1291,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0af2a4269743eb240acd1cb9a0d7b1a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CarController
-  wheels:
+  frontWheels:
   - {fileID: 5116488324842822924}
   - {fileID: 6692636639548266898}
-  - {fileID: 4228959025247024500}
-  - {fileID: 4587418078658511681}
   Engine: {fileID: 7631484339241281752}
   QPanelFL: {fileID: 8163309649922115832}
   QPanelFR: {fileID: 6397664828564022668}
-  motorforce: 100
-  brakeforce: 100
-  maxSteerAngle: 30
+  motorforce: 2000
+  brakeforce: 2000
+  maxSteerAngle: 10
+  maxSpeed: 100
+  accelerate: 20
 --- !u!114 &9110410266049407309
 MonoBehaviour:
   m_ObjectHideFlags: 0
