@@ -7,10 +7,12 @@ public class CollisionController : MonoBehaviour
     [SerializeField] private int MaxHitsPerCollision;
     private CarComponent[] components;
     private int registrations = 0;
+    private CodriverBehavior codriver;
 
     private void Start()
     {
         components = new CarComponent[MaxHitsPerCollision];
+        codriver = GetComponent<CodriverBehavior>();
     }
 
     void Update()
@@ -21,6 +23,8 @@ public class CollisionController : MonoBehaviour
             {
                 components[i].Hit();
             }
+            
+            codriver.PlayCrashReaction();
 
             registrations = 0;
         }
