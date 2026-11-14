@@ -7,8 +7,6 @@ using Vector3 = UnityEngine.Vector3;
 
 public class CarController : MonoBehaviour
 {
-    
-    private Rigidbody rb;
     [Header("Car Components")]
     [FormerlySerializedAs("wheels")] [SerializeField]private WheelController[] frontWheels;
     [SerializeField]private MultiplierComponent Engine;
@@ -31,37 +29,34 @@ public class CarController : MonoBehaviour
    
     
     float currentMotorTorque;
-    private float currentBrakeTorque;
+    private bool braking;
     private float currentAngle;
     private Vector2 movement;
     
     
-    void Start()
-    {
-        rb = GetComponent<Rigidbody>();
-        
-    }
 
     void Update()
     {
-        float currentSpeed = Vector3.Dot(transform.forward, rb.linearVelocity);
-        float speedFactor = Mathf.InverseLerp(0, maxSpeed, Mathf.Abs(currentSpeed));
-        if (movement.y == 0 && currentMotorTorque == 0)
-        {
-            currentMotorTorque = 0;
-            currentBrakeTorque = 1000;
-        }
-        else if (movement.y != 0)
-        {
-            currentMotorTorque = Mathf.Lerp(motorforce, motorforce * 3, accelerate);
-            currentBrakeTorque = 0;
-            
-        }
         for (int i = 0; i < frontWheels.Length; i++)
         {
-            
-            frontWheels[i]._col.motorTorque = currentMotorTorque * movement.y;
-            frontWheels[i]._col.brakeTorque = currentBrakeTorque;
+            if (braking)
+            {
+                frontWheels[i]._col.motorTorque = 0;
+                frontWheels[i]._col.brakeTorque = brakeforce;
+            }
+            else
+            {
+                if (movement.y == 0.0f)
+                {
+                    frontWheels[i]._col.brakeTorque = 1000;
+                }
+                else
+                {
+                    currentMotorTorque = Mathf.Lerp(motorforce, motorforce * 3, accelerate);
+                    frontWheels[i]._col.motorTorque = currentMotorTorque * movement.y;
+                    frontWheels[i]._col.brakeTorque = 0;
+                }
+            }
             
             // Sida 
             frontWheels[i]._col.steerAngle = movement.x * currentAngle;
@@ -71,25 +66,11 @@ public class CarController : MonoBehaviour
 
     public void Brake(InputAction.CallbackContext context)
     {
-        currentBrakeTorque = brakeforce;
-        rb.linearDamping = slowSpeed;
-        rb.angularDamping = baseSpeed;
-        currentMotorTorque = 0;
-
-        if (context.canceled)
-        {
-            rb.linearDamping = 0;
-            rb.angularDamping = 0;
-            currentBrakeTorque = 0;
-        }
+        braking = !context.canceled;
     }
 
     public void Move(InputAction.CallbackContext context)
     {
-        if (context.started)
-        {
-            rb.linearVelocity += Vector3.forward * baseSpeed * context.ReadValue<Vector2>().y;
-        }
         movement = context.ReadValue<Vector2>();
         //Apply multiplyer to max-steer
         if (movement.x < 0)
@@ -100,10 +81,5 @@ public class CarController : MonoBehaviour
         {
             currentAngle = maxSteerAngle * QPanelFR.Multiplier;
         }
-    }
-    public Vector2 GetMovementInput()
-    {
-       
-        return Vector2.zero;
     }
 }
