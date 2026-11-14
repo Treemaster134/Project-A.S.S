@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-[RequireComponent(typeof(CarController)), RequireComponent(typeof(Rigidbody))]
+[RequireComponent(typeof(Rigidbody))]
 public class CollisionController : MonoBehaviour
 {
     [SerializeField] private int MaxHitsPerCollision;
