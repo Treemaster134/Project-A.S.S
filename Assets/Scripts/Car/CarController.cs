@@ -14,6 +14,7 @@ public class CarController : MonoBehaviour
     [SerializeField]private MultiplierComponent Engine;
     [SerializeField]private MultiplierComponent QPanelFL;
     [SerializeField]private MultiplierComponent QPanelFR;
+    
 
     [Header("motor and steering")]
     [SerializeField]private float motorforce = 10;
@@ -23,6 +24,9 @@ public class CarController : MonoBehaviour
 
     [Header("Acceleration")] 
     [SerializeField]private float accelerate = 10;
+
+    [SerializeField] float baseSpeed;
+    [SerializeField] float slowSpeed;
 
    
     
@@ -49,8 +53,9 @@ public class CarController : MonoBehaviour
         }
         else if (movement.y != 0)
         {
-            currentMotorTorque = Mathf.Lerp(motorforce, motorforce * 2, accelerate);
+            currentMotorTorque = Mathf.Lerp(motorforce, motorforce * 3, accelerate);
             currentBrakeTorque = 0;
+            
         }
         for (int i = 0; i < frontWheels.Length; i++)
         {
@@ -66,18 +71,25 @@ public class CarController : MonoBehaviour
 
     public void Brake(InputAction.CallbackContext context)
     {
-        currentBrakeTorque = brakeforce * 10;
+        currentBrakeTorque = brakeforce;
+        rb.linearDamping = slowSpeed;
+        rb.angularDamping = baseSpeed;
         currentMotorTorque = 0;
 
         if (context.canceled)
         {
+            rb.linearDamping = 0;
+            rb.angularDamping = 0;
             currentBrakeTorque = 0;
         }
     }
 
     public void Move(InputAction.CallbackContext context)
     {
-        
+        if (context.started)
+        {
+            rb.linearVelocity += Vector3.forward * baseSpeed * context.ReadValue<Vector2>().y;
+        }
         movement = context.ReadValue<Vector2>();
         //Apply multiplyer to max-steer
         if (movement.x < 0)
