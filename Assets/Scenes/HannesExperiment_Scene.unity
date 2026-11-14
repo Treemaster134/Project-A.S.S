@@ -569,6 +569,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: f87f070ae8afd77428a93b8c9af855b0, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: d4ff6b8f2723fc74dbb26be781c92916, type: 2}
     - target: {fileID: 919132149155446097, guid: f87f070ae8afd77428a93b8c9af855b0, type: 3}
       propertyPath: m_Name
       value: Rectangle_Sign
