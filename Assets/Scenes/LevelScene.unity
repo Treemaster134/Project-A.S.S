@@ -18033,8 +18033,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6f27bc3019e8ab44b59f56217162842, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AudioController
-  moveForwardSFX: {fileID: 0}
-  moveBackWardSFX: {fileID: 0}
+  moveForwardSFX: {fileID: 8300000, guid: fd2f4b2f13a7052408214746dbaeca1c, type: 3}
+  moveBackWardSFX: {fileID: 8300000, guid: 4350825e07cc1ea4884bb880cef23cd9, type: 3}
 --- !u!82 &1410183870
 AudioSource:
   m_ObjectHideFlags: 0
