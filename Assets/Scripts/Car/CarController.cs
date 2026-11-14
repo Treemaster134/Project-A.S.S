@@ -31,7 +31,7 @@ public class CarController : MonoBehaviour
    [SerializeField] private float maxRotationspeed;
    
   
-
+   public PrometeoCarController PCC;
 
  
   
@@ -52,70 +52,37 @@ public class CarController : MonoBehaviour
 
    void Update()
    {
-       for (int i = 0; i < wheels.Length; i++)
-       {
-           if (braking)
-           {
-               currentRotation = Mathf.Lerp(wheels[i]._col.rotationSpeed, 0, retardation);
-               wheels[i]._col.rotationSpeed = currentRotation;
-               wheels[i]._col.motorTorque = 0;
-               wheels[i]._col.brakeTorque = brakeforce;
-           }
-           else
-           {
-               if (movement.y == 0.0f)
-               {
-                   wheels[i]._col.motorTorque = 0;
-                   wheels[i]._col.brakeTorque = 1000;
-               }
-               else
-               {
-                   currentRotation = Mathf.Lerp(wheels[i]._col.rotationSpeed, maxRotationspeed, accelerate);
-                   wheels[i]._col.rotationSpeed = currentRotation;
-                   currentMotorTorque = Mathf.Lerp(motorforce, motorforce * 3, accelerate);
-                   wheels[i]._col.motorTorque = currentMotorTorque * movement.y;
-                   wheels[i]._col.brakeTorque = 0;
-               }
-           }
-          
-           // Sida
-           if(wheels[i].FrontWheel)
-           {
-               wheels[i]._col.steerAngle = movement.x * currentAngle;
-           }
-          
-       }
-   }
+        if(Input.GetKey(KeyCode.W))
+        {
+            Debug.Log("W pressed");
+            PCC.GoForward();
+        }
+        else if(Input.GetKey(KeyCode.S))
+        {
+            Debug.Log("S pressed");
+            PCC.GoReverse();
+        }
 
+        if(Input.GetKey(KeyCode.A)){
+            Debug.Log("A pressed");
+            PCC.TurnLeft();
+        }
+        if(Input.GetKey(KeyCode.D)){
+            Debug.Log("D pressed");
+            PCC.TurnRight();
+        }
 
-   public void Brake(InputAction.CallbackContext context)
-   {
-     
-       braking = !context.canceled;
-   }
+if(!Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.D) &&
+PCC.steeringAxis != 0){
+PCC.ResetSteeringAngle();
+}
 
-
-   public void Move(InputAction.CallbackContext context)
-   {
-       if (context.started)
-       {
-              for (int i = 0; i < wheels.Length; i++)
-              {
-                  wheels[i]._col.rotationSpeed += baseRotationSpeed;
-              }
-               
-       }
-      
-       movement = context.ReadValue<Vector2>();
-       //Apply multiplyer to max-steer
-       if (movement.x < 0)
-       {
-           currentAngle = maxSteerAngle * QPanelFL.Multiplier;
-       }
-       else if (movement.x > 0)
-       {
-           currentAngle = maxSteerAngle * QPanelFR.Multiplier;
-       }
+        if(!Input.GetKey(KeyCode.S) && !Input.GetKey(KeyCode.W) &&
+!Input.GetKey(KeyCode.Space) && !PCC.deceleratingCar)
+        {
+            PCC.InvokeRepeating("DecelerateCar", 0f, 0.1f);
+            PCC.deceleratingCar = true;
+        }
    }
 }
 

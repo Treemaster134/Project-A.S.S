@@ -26,13 +26,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 733340376620477256}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.4953204, y: 0.50448096, z: -0.49076644, w: 0.5092199}
-  m_LocalPosition: {x: 163, y: 33.5, z: 87.6}
-  m_LocalScale: {x: 1, y: 0.16009998, z: 1}
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 164.37437, y: 32.785744, z: -0.00009536743}
+  m_LocalScale: {x: 0.31753054, y: 0.1163375, z: 0.31753054}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3890422714412823935}
-  m_LocalEulerAnglesHint: {x: 88.418, y: -0.65, z: -0.117}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!146 &1216226735484714746
 WheelCollider:
   m_ObjectHideFlags: 0
@@ -113,13 +113,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 897841806361885355}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.5, y: -0.5, z: 0.5, w: 0.5}
-  m_LocalPosition: {x: -93, y: 32.785805, z: 92}
-  m_LocalScale: {x: -1, y: 0.16010001, z: 1}
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -92.9392, y: 32.785744, z: -0.000059604645}
+  m_LocalScale: {x: 0.31753054, y: 0.1163375, z: 0.31753054}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3890422714412823935}
-  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!146 &3020087289657053783
 WheelCollider:
   m_ObjectHideFlags: 0
@@ -186,7 +186,7 @@ GameObject:
   - component: {fileID: 7979443285083404364}
   - component: {fileID: 8462619840839833507}
   m_Layer: 0
-  m_Name: Wheel FR Collider
+  m_Name: Wheel rR Collider
   m_TagString: Car
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -200,13 +200,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 979424926815227760}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.5, y: 0.5, z: 0.5, w: 0.5}
-  m_LocalPosition: {x: 164, y: 32.785805, z: -81}
-  m_LocalScale: {x: 1, y: -0.16010001, z: -1}
+  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -92.9392, y: 32.785744, z: -0.000059604645}
+  m_LocalScale: {x: 0.31753054, y: 0.1163375, z: -0.31753054}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3890422714412823935}
-  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!146 &7979443285083404364
 WheelCollider:
   m_ObjectHideFlags: 0
@@ -273,7 +273,7 @@ GameObject:
   - component: {fileID: 8108840850340524339}
   - component: {fileID: 5556919945848448404}
   m_Layer: 0
-  m_Name: Wheel RR Collider
+  m_Name: Wheel fR Collider
   m_TagString: Car
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -287,13 +287,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1978250347110796685}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.5, y: -0.5, z: -0.5, w: 0.5}
-  m_LocalPosition: {x: -93, y: 32.785805, z: -85.2}
-  m_LocalScale: {x: -1, y: -0.16010001, z: -1}
+  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 168.82, y: 21.03724, z: -80.97087}
+  m_LocalScale: {x: 0.31753054, y: 0.1163375, z: -0.31753054}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3890422714412823935}
-  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!146 &8108840850340524339
 WheelCollider:
   m_ObjectHideFlags: 0
@@ -303,7 +303,7 @@ WheelCollider:
   m_GameObject: {fileID: 1978250347110796685}
   serializedVersion: 2
   m_Center: {x: 0, y: 0, z: 0}
-  m_Radius: 30
+  m_Radius: 192
   m_SuspensionSpring:
     spring: 35000
     damper: 4500
@@ -358,9 +358,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2572614454216333588}
   - component: {fileID: 1728203677752245270}
-  - component: {fileID: 1902200902178538181}
   - component: {fileID: 2338938908732104223}
   - component: {fileID: 2543546052058284718}
+  - component: {fileID: 4194629157288393333}
   - component: {fileID: 3538586205873861101}
   - component: {fileID: 3453567017168566002}
   m_Layer: 0
@@ -415,34 +415,6 @@ Rigidbody:
   m_Interpolate: 1
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &1902200902178538181
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4984830533252159400}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0af2a4269743eb240acd1cb9a0d7b1a9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CarController
-  wheels:
-  - {fileID: 3381866036369149491}
-  - {fileID: 8462619840839833507}
-  - {fileID: 4054713829830855974}
-  - {fileID: 5556919945848448404}
-  backWheels: []
-  Engine: {fileID: 6745907288071176641}
-  QPanelFL: {fileID: 3864355488150939798}
-  QPanelFR: {fileID: 5795315542065874234}
-  motorforce: 10000
-  brakeforce: 10000
-  maxSteerAngle: 50
-  accelerate: 1
-  retardation: 10
-  baseRotationSpeed: 200
-  maxRotationspeed: 10000
 --- !u!114 &2338938908732104223
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -463,7 +435,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4984830533252159400}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
   m_Name: 
@@ -486,15 +458,51 @@ MonoBehaviour:
     m_ActionId: 6c2ab1b8-8984-453a-af3d-a3c78ae1679a
     m_ActionName: 'Player/Attack[/Mouse/leftButton,/Keyboard/enter]'
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 4194629157288393333}
+        m_TargetAssemblyTypeName: PrometeoCarController, Assembly-CSharp
+        m_MethodName: GoReverse
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 852140f2-7766-474d-8707-702459ba45f3
     m_ActionName: 'Player/Interact[/Keyboard/e]'
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 4194629157288393333}
+        m_TargetAssemblyTypeName: PrometeoCarController, Assembly-CSharp
+        m_MethodName: TurnLeft
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 27c5f898-bc57-4ee1-8800-db469aca5fe3
     m_ActionName: 'Player/Crouch[/Keyboard/c]'
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 4194629157288393333}
+        m_TargetAssemblyTypeName: PrometeoCarController, Assembly-CSharp
+        m_MethodName: TurnRight
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: f1ba0d36-48eb-4cd5-b651-1c94a6531f70
     m_ActionName: 'Player/Jump[/Keyboard/space]'
   - m_PersistentCalls:
@@ -551,7 +559,7 @@ MonoBehaviour:
     m_ActionName: UI/TrackedDeviceOrientation
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1902200902178538181}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: CarController, Assembly-CSharp
         m_MethodName: Brake
         m_Mode: 0
@@ -574,6 +582,54 @@ MonoBehaviour:
   m_DefaultActionMap: 
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &4194629157288393333
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4984830533252159400}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0fefceefe666bb4682b272ec8c5bdd0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PrometeoCarController
+  maxSpeed: 90
+  maxReverseSpeed: 45
+  accelerationMultiplier: 2
+  maxSteeringAngle: 27
+  steeringSpeed: 0.5
+  brakeForce: 350
+  decelerationMultiplier: 2
+  handbrakeDriftMultiplier: 5
+  bodyMassCenter: {x: 0, y: 0, z: 1}
+  frontLeftMesh: {fileID: 2088550438302767227}
+  frontLeftCollider: {fileID: 1216226735484714746}
+  frontRightMesh: {fileID: 6737812496781577304}
+  frontRightCollider: {fileID: 8108840850340524339}
+  rearLeftMesh: {fileID: 8594350527589348489}
+  rearLeftCollider: {fileID: 3020087289657053783}
+  rearRightMesh: {fileID: 9212734189223476579}
+  rearRightCollider: {fileID: 7979443285083404364}
+  useEffects: 0
+  RLWParticleSystem: {fileID: 0}
+  RRWParticleSystem: {fileID: 0}
+  RLWTireSkid: {fileID: 0}
+  RRWTireSkid: {fileID: 0}
+  useUI: 0
+  carSpeedText: {fileID: 0}
+  useSounds: 0
+  carEngineSound: {fileID: 0}
+  tireScreechSound: {fileID: 0}
+  useTouchControls: 0
+  throttleButton: {fileID: 0}
+  reverseButton: {fileID: 0}
+  turnRightButton: {fileID: 0}
+  turnLeftButton: {fileID: 0}
+  handbrakeButton: {fileID: 0}
+  carSpeed: 0
+  isDrifting: 0
+  isTractionLocked: 0
 --- !u!114 &3538586205873861101
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -685,6 +741,37 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &5822089907839962925
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3425280628373353731}
+  m_Layer: 0
+  m_Name: Wheels
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3425280628373353731
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5822089907839962925}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3890422714412823935}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5944277613666705157
 GameObject:
   m_ObjectHideFlags: 0
@@ -1301,17 +1388,20 @@ PrefabInstance:
       insertIndex: 0
       addedObject: {fileID: 4453590588714036301}
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: a37879bb3cc24434f918e8ed4a1e1731, type: 3}
-      insertIndex: 17
+      insertIndex: 6
       addedObject: {fileID: 8088192236579466439}
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: a37879bb3cc24434f918e8ed4a1e1731, type: 3}
-      insertIndex: 18
+      insertIndex: 10
       addedObject: {fileID: 6768336958634391905}
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: a37879bb3cc24434f918e8ed4a1e1731, type: 3}
-      insertIndex: 19
+      insertIndex: 15
       addedObject: {fileID: 4998460754673258303}
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: a37879bb3cc24434f918e8ed4a1e1731, type: 3}
-      insertIndex: 20
+      insertIndex: 19
       addedObject: {fileID: 7859071710487909007}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: a37879bb3cc24434f918e8ed4a1e1731, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3425280628373353731}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 5800967526154409366, guid: a37879bb3cc24434f918e8ed4a1e1731, type: 3}
       insertIndex: -1
@@ -1396,7 +1486,7 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
   m_Convex: 1
   m_CookingOptions: 30
@@ -1437,7 +1527,7 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
   m_Convex: 1
   m_CookingOptions: 30
@@ -1478,7 +1568,7 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
   m_Convex: 1
   m_CookingOptions: 30
@@ -1519,7 +1609,7 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
   m_Convex: 1
   m_CookingOptions: 30
@@ -1538,6 +1628,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BreakableComponent
   collisionController: {fileID: 2338938908732104223}
   health: 1
+--- !u!1 &2088550438302767227 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -5869542528904639761, guid: a37879bb3cc24434f918e8ed4a1e1731, type: 3}
+  m_PrefabInstance: {fileID: 3636436409424974484}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &3072710807308425196 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1788845593105122680, guid: a37879bb3cc24434f918e8ed4a1e1731, type: 3}
@@ -1560,7 +1655,7 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
   m_Convex: 1
   m_CookingOptions: 30
@@ -1606,7 +1701,7 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
   m_Convex: 1
   m_CookingOptions: 30
@@ -1650,7 +1745,7 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
   m_Convex: 1
   m_CookingOptions: 30
@@ -1691,7 +1786,7 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
   m_Convex: 1
   m_CookingOptions: 30
@@ -1713,6 +1808,11 @@ MonoBehaviour:
   MultiplierDelta: 0
   MultiplierUpperBound: 0
   MultiplierLowerBound: 0
+--- !u!1 &6737812496781577304 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -1155539022466507060, guid: a37879bb3cc24434f918e8ed4a1e1731, type: 3}
+  m_PrefabInstance: {fileID: 3636436409424974484}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &7130916331231119106 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5800967526154409366, guid: a37879bb3cc24434f918e8ed4a1e1731, type: 3}
@@ -1735,7 +1835,7 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
   m_Convex: 1
   m_CookingOptions: 30
@@ -1779,7 +1879,7 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
   m_Convex: 1
   m_CookingOptions: 30
@@ -1798,3 +1898,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BreakableComponent
   collisionController: {fileID: 2338938908732104223}
   health: 1
+--- !u!1 &8594350527589348489 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4986175147392493085, guid: a37879bb3cc24434f918e8ed4a1e1731, type: 3}
+  m_PrefabInstance: {fileID: 3636436409424974484}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &9212734189223476579 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5597133531589406711, guid: a37879bb3cc24434f918e8ed4a1e1731, type: 3}
+  m_PrefabInstance: {fileID: 3636436409424974484}
+  m_PrefabAsset: {fileID: 0}
