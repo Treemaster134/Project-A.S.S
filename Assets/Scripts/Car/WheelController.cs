@@ -5,7 +5,8 @@ public class WheelController : MonoBehaviour
 {
     public WheelCollider _col;
     [SerializeField]private Transform _model;
-
+    public bool FrontWheel;
+    
     private Vector3 _position;
     private Quaternion _rotation;
     

@@ -86,6 +86,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::WheelController
   _col: {fileID: 1216226735484714746}
   _model: {fileID: 0}
+  FrontWheel: 1
 --- !u!1 &897841806361885355
 GameObject:
   m_ObjectHideFlags: 0
@@ -172,6 +173,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::WheelController
   _col: {fileID: 3020087289657053783}
   _model: {fileID: 0}
+  FrontWheel: 0
 --- !u!1 &979424926815227760
 GameObject:
   m_ObjectHideFlags: 0
@@ -258,6 +260,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::WheelController
   _col: {fileID: 7979443285083404364}
   _model: {fileID: 0}
+  FrontWheel: 1
 --- !u!1 &1978250347110796685
 GameObject:
   m_ObjectHideFlags: 0
@@ -344,6 +347,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::WheelController
   _col: {fileID: 8108840850340524339}
   _model: {fileID: 0}
+  FrontWheel: 0
 --- !u!1 &4984830533252159400
 GameObject:
   m_ObjectHideFlags: 0
@@ -372,7 +376,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4984830533252159400}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.022660753, z: -0, w: 0.9997433}
+  m_LocalRotation: {x: 0, y: 0.022661163, z: 0, w: 0.9997432}
   m_LocalPosition: {x: 20.347553, y: 73.9, z: 60.091774}
   m_LocalScale: {x: 2.92, y: 2.92, z: 2.92}
   m_ConstrainProportionsScale: 1
@@ -419,19 +423,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0af2a4269743eb240acd1cb9a0d7b1a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CarController
-  frontWheels:
+  wheels:
   - {fileID: 3381866036369149491}
   - {fileID: 8462619840839833507}
+  - {fileID: 4054713829830855974}
+  - {fileID: 5556919945848448404}
+  backWheels: []
   Engine: {fileID: 6745907288071176641}
   QPanelFL: {fileID: 3864355488150939798}
   QPanelFR: {fileID: 5795315542065874234}
   motorforce: 8000
   brakeforce: 20000
   maxSteerAngle: 40
-  maxSpeed: 400
   accelerate: 100
-  baseSpeed: 6
-  slowSpeed: 6
+  baseSpeed: 2
 --- !u!114 &2338938908732104223
 MonoBehaviour:
   m_ObjectHideFlags: 0
