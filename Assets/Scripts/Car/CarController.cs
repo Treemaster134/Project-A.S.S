@@ -25,6 +25,7 @@ public class CarController : MonoBehaviour
     [SerializeField]private float accelerate = 10;
     
     float currentMotorTorque;
+    private float currentBrakeTorque;
     private float currentAngle;
     private Vector2 movement;
     
@@ -33,33 +34,32 @@ public class CarController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
     }
-    
+
     void Update()
     {
         float currentSpeed = Vector3.Dot(transform.forward, rb.linearVelocity);
         float speedFactor = Mathf.InverseLerp(0, maxSpeed, Mathf.Abs(currentSpeed));
-            if(movement.y == 0)
-            {
-                currentMotorTorque = Mathf.Lerp(currentMotorTorque, 0, speedFactor * 2);
-            }
-            else
-            {
-                currentMotorTorque = Mathf.Lerp(motorforce, motorforce * 2 , accelerate);
-            }
-            Debug.Log(currentSpeed);
+        if (movement.y == 0)
+        {
+            Debug.Log("Y 0");
+            currentMotorTorque = Mathf.Lerp(currentMotorTorque, 0, accelerate * 2);
+            currentBrakeTorque = 1000;
+        }
+        else
+        {
+            currentMotorTorque = Mathf.Lerp(motorforce, motorforce * 2, accelerate);
+            currentBrakeTorque = 0;
+        }
+        for (int i = 0; i < frontWheels.Length; i++)
+        {
             
-            for (int i = 0; i < frontWheels.Length; i++)
-            {
-                frontWheels[i]._col.motorTorque = currentMotorTorque * movement.y;
-            }
-        
-        
-        // Sida 
-       
-            for (int i = 0; i < frontWheels.Length; i++)
-            {
-                frontWheels[i]._col.steerAngle = movement.x * maxSteerAngle;
-            }
+            frontWheels[i]._col.motorTorque = currentMotorTorque * movement.y;
+            frontWheels[i]._col.brakeTorque = currentBrakeTorque;
+            
+            // Sida 
+            frontWheels[i]._col.steerAngle = movement.x * maxSteerAngle;
+            
+        }
     }
 
     public void Brake(InputAction.CallbackContext context)

@@ -14,8 +14,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Project-A.S.S/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Project-A.S.S/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Movement test.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Movement test.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Car/CarController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Car/CarController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ShaderGraphSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ShaderGraphSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +101,7 @@
       <updated>1794593808179</updated>
       <workItem from="1794593811700" duration="867000" />
       <workItem from="1794600866463" duration="7968000" />
-      <workItem from="1794642422393" duration="5393000" />
+      <workItem from="1794642422393" duration="7140000" />
     </task>
     <servers />
   </component>
