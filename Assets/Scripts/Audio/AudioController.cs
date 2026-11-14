@@ -6,7 +6,7 @@ using Random = UnityEngine.Random;
 public class AudioController : MonoBehaviour
 {
     private AudioSource audio;
-    [SerializeField] private AudioClip moveForwardSFX, moveBackWardSFX ;
+    [SerializeField] private AudioClip moveSFX, idleSFX ;
     private AudioClip clip;
     void Start()
     {
@@ -16,24 +16,15 @@ public class AudioController : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKey(KeyCode.W) && clip != moveForwardSFX ||(Input.GetKey(KeyCode.W) && !audio.isPlaying))
+        if((Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S)) && (clip != moveSFX || !audio.isPlaying))
         {
-            clip = moveForwardSFX;
-            audio.PlayOneShot(clip);
+            audio.clip = moveSFX;
+            audio.Play();
         }
-
-        if (Input.GetKey(KeyCode.S) && clip != moveBackWardSFX ||Input.GetKey(KeyCode.S)&&!audio.isPlaying)
+        else if (clip != idleSFX || !audio.isPlaying)
         {
-            clip = moveBackWardSFX;
-            audio.PlayOneShot(clip);
-        }
-    }
-
-    public void PlayAudio(InputAction.CallbackContext context)
-    {
-        if (context.started)
-        {
-            
+            audio.clip = idleSFX;
+            audio.Play();
         }
     }
 }
