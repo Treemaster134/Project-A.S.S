@@ -1,10 +1,13 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class Speedometer : MonoBehaviour
 {
-    [SerializeField]private PrometeoCarController car;
-    [SerializeField]private Image speeder;
+    [SerializeField] private PrometeoCarController car;
+    [SerializeField] private RectTransform speeder;
+    [SerializeField] private TextMeshProUGUI distanceText;
+    [SerializeField] private float distanceLeft;
 
     private float maxSpeed, currentSpeed;
     void Start()
@@ -15,6 +18,8 @@ public class Speedometer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        speeder.fillAmount = maxSpeed / car.carSpeed;
+        currentSpeed = car.carSpeed;
+        speeder.rotation = Quaternion.Euler(0,0,-180.0f * currentSpeed / maxSpeed);
+        distanceText.text = $"DISTANCE: {distanceLeft.ToString("F0")}";
     }
 }
