@@ -668,18 +668,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 241057650001845873, guid: bf9a4d9c3d3d71a4ea7ecfa61da7815d, type: 3}
-      propertyPath: m_ForwardFriction.m_ExtremumSlip
-      value: 0.05
-      objectReference: {fileID: 0}
-    - target: {fileID: 530617632593000271, guid: bf9a4d9c3d3d71a4ea7ecfa61da7815d, type: 3}
-      propertyPath: m_ForwardFriction.m_ExtremumSlip
-      value: 0.05
-      objectReference: {fileID: 0}
-    - target: {fileID: 791532281131176946, guid: bf9a4d9c3d3d71a4ea7ecfa61da7815d, type: 3}
-      propertyPath: m_ForwardFriction.m_ExtremumSlip
-      value: 0.05
-      objectReference: {fileID: 0}
     - target: {fileID: 3363686461194453345, guid: bf9a4d9c3d3d71a4ea7ecfa61da7815d, type: 3}
       propertyPath: m_Name
       value: Car
@@ -735,10 +723,6 @@ PrefabInstance:
     - target: {fileID: 5326437211776036824, guid: bf9a4d9c3d3d71a4ea7ecfa61da7815d, type: 3}
       propertyPath: brakeforce
       value: 20000
-      objectReference: {fileID: 0}
-    - target: {fileID: 5496780922351659221, guid: bf9a4d9c3d3d71a4ea7ecfa61da7815d, type: 3}
-      propertyPath: m_ForwardFriction.m_ExtremumSlip
-      value: 0.05
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
