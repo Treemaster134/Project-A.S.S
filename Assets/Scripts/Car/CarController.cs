@@ -23,10 +23,13 @@ public class CarController : MonoBehaviour
 
 
    [Header("Acceleration")]
-   [SerializeField,Tooltip("Acceleration och Retardation")]private float accelerate = 10;
+   [SerializeField]private float accelerate = 10;
+   [SerializeField]private float retardation = 10;
 
 
-   [SerializeField] float baseSpeed;
+   [SerializeField] float baseRotationSpeed;
+   [SerializeField] private float maxRotationspeed;
+   
   
 
 
@@ -53,7 +56,7 @@ public class CarController : MonoBehaviour
        {
            if (braking)
            {
-               currentRotation = Mathf.Lerp(wheels[i]._col.rotationSpeed, 0, accelerate);
+               currentRotation = Mathf.Lerp(wheels[i]._col.rotationSpeed, 0, retardation);
                wheels[i]._col.rotationSpeed = currentRotation;
                wheels[i]._col.motorTorque = 0;
                wheels[i]._col.brakeTorque = brakeforce;
@@ -67,7 +70,8 @@ public class CarController : MonoBehaviour
                }
                else
                {
-                   Debug.Log(wheels[i]._col.rotationSpeed);
+                   currentRotation = Mathf.Lerp(wheels[i]._col.rotationSpeed, maxRotationspeed, accelerate);
+                   wheels[i]._col.rotationSpeed = currentRotation;
                    currentMotorTorque = Mathf.Lerp(motorforce, motorforce * 3, accelerate);
                    wheels[i]._col.motorTorque = currentMotorTorque * movement.y;
                    wheels[i]._col.brakeTorque = 0;
@@ -86,10 +90,7 @@ public class CarController : MonoBehaviour
 
    public void Brake(InputAction.CallbackContext context)
    {
-       if (context.started)
-       {
-          
-       }
+     
        braking = !context.canceled;
    }
 
@@ -98,7 +99,10 @@ public class CarController : MonoBehaviour
    {
        if (context.started)
        {
-               rb.linearVelocity += Vector3.forward * context.ReadValue<Vector2>().y * baseSpeed;
+              for (int i = 0; i < wheels.Length; i++)
+              {
+                  wheels[i]._col.rotationSpeed += baseRotationSpeed;
+              }
                
        }
       

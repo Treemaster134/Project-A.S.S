@@ -436,7 +436,9 @@ MonoBehaviour:
   brakeforce: 20000
   maxSteerAngle: 40
   accelerate: 100
-  baseSpeed: 2
+  retardation: 10
+  baseRotationSpeed: 200
+  maxRotationspeed: 10000
 --- !u!114 &2338938908732104223
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1274,9 +1276,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MultiplierComponent
   collisionController: {fileID: 2338938908732104223}
   multiplier: 1
-  MultiplierDelta: 0
-  MultiplierUpperBound: 0
-  MultiplierLowerBound: 0
+  MultiplierDelta: 0.25
+  MultiplierUpperBound: 2
+  MultiplierLowerBound: 0.2
 --- !u!1 &8131914831213233795 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4804613825940722711, guid: a37879bb3cc24434f918e8ed4a1e1731, type: 3}
