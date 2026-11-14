@@ -7,18 +7,18 @@ public class BreakableComponent : CarComponent
     {
         if (--health <= 0)
         {
-            gameObject.SetActive(false);
-            Debug.Log($"Detached: {gameObject.name}");
-        }
-        else
-        {
             Rigidbody rb = gameObject.AddComponent<Rigidbody>();
-            Vector3 launchDirection = -transform.parent.forward.normalized;
-            launchDirection += transform.parent.right * transform.localPosition.normalized.x;
+            Vector3 launchDirection = -transform.parent.right.normalized;
+            launchDirection -= transform.parent.forward.normalized * (transform.localPosition.normalized.x * 0.1f);
+            launchDirection.y += 0.5f;
 
             transform.parent = null;
             GetComponent<Collider>().enabled = false;
-            rb.AddForce(launchDirection * 100, ForceMode.Impulse);
+            rb.AddForce(launchDirection.normalized * 35f, ForceMode.Impulse);
+        }
+        else
+        {
+            Debug.Log($"Damaged: {gameObject.name}");
         }
     }
 }
