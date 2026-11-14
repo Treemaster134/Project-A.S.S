@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6692636639548266898}
   m_Layer: 0
   m_Name: Wheel FR Collider
-  m_TagString: Untagged
+  m_TagString: Car
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -42,7 +42,7 @@ WheelCollider:
   m_GameObject: {fileID: 1005552189138116210}
   serializedVersion: 2
   m_Center: {x: 0, y: 0, z: 0}
-  m_Radius: 2
+  m_Radius: 192
   m_SuspensionSpring:
     spring: 35000
     damper: 2000
@@ -99,7 +99,7 @@ GameObject:
   - component: {fileID: 5116488324842822924}
   m_Layer: 0
   m_Name: Wheel FL Collider
-  m_TagString: Untagged
+  m_TagString: Car
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -128,7 +128,7 @@ WheelCollider:
   m_GameObject: {fileID: 2063665795103554396}
   serializedVersion: 2
   m_Center: {x: 0, y: 0, z: 0}
-  m_Radius: 2
+  m_Radius: 192
   m_SuspensionSpring:
     spring: 35000
     damper: 2000
@@ -185,7 +185,7 @@ GameObject:
   - component: {fileID: 4228959025247024500}
   m_Layer: 0
   m_Name: Wheel RL Collider
-  m_TagString: Untagged
+  m_TagString: Car
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -214,7 +214,7 @@ WheelCollider:
   m_GameObject: {fileID: 3058024463288117545}
   serializedVersion: 2
   m_Center: {x: 0, y: 0, z: 0}
-  m_Radius: 2
+  m_Radius: 192
   m_SuspensionSpring:
     spring: 35000
     damper: 2000
@@ -273,7 +273,7 @@ GameObject:
   - component: {fileID: 331166427648471818}
   m_Layer: 0
   m_Name: Car
-  m_TagString: Untagged
+  m_TagString: Car
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -288,8 +288,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.42637, y: 0.33161, z: -4.41573}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 2.92, y: 2.92, z: 2.92}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 2884559306437819543}
   m_Father: {fileID: 0}
@@ -339,11 +339,11 @@ MonoBehaviour:
   Engine: {fileID: 0}
   QPanelFL: {fileID: 0}
   QPanelFR: {fileID: 0}
-  motorforce: 2000
-  brakeforce: 2000
-  maxSteerAngle: 10
-  maxSpeed: 100
-  accelerate: 20
+  motorforce: 8000
+  brakeforce: 4000
+  maxSteerAngle: 40
+  maxSpeed: 400
+  accelerate: 100
 --- !u!114 &9110410266049407309
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -504,7 +504,7 @@ GameObject:
   - component: {fileID: 4587418078658511681}
   m_Layer: 0
   m_Name: Wheel RR Collider
-  m_TagString: Untagged
+  m_TagString: Car
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -533,7 +533,7 @@ WheelCollider:
   m_GameObject: {fileID: 5002120563847189406}
   serializedVersion: 2
   m_Center: {x: 0, y: 0, z: 0}
-  m_Radius: 2
+  m_Radius: 192
   m_SuspensionSpring:
     spring: 35000
     damper: 2000
@@ -625,6 +625,66 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8111536118453012485, guid: a37879bb3cc24434f918e8ed4a1e1731, type: 3}
+      propertyPath: m_TagString
+      value: Car
+      objectReference: {fileID: 0}
+    - target: {fileID: -6796376183647090572, guid: a37879bb3cc24434f918e8ed4a1e1731, type: 3}
+      propertyPath: m_TagString
+      value: Car
+      objectReference: {fileID: 0}
+    - target: {fileID: -6428925032311473874, guid: a37879bb3cc24434f918e8ed4a1e1731, type: 3}
+      propertyPath: m_TagString
+      value: Car
+      objectReference: {fileID: 0}
+    - target: {fileID: -5901118724748424300, guid: a37879bb3cc24434f918e8ed4a1e1731, type: 3}
+      propertyPath: m_TagString
+      value: Car
+      objectReference: {fileID: 0}
+    - target: {fileID: -5869542528904639761, guid: a37879bb3cc24434f918e8ed4a1e1731, type: 3}
+      propertyPath: m_TagString
+      value: Car
+      objectReference: {fileID: 0}
+    - target: {fileID: -5734240519153160398, guid: a37879bb3cc24434f918e8ed4a1e1731, type: 3}
+      propertyPath: m_TagString
+      value: Car
+      objectReference: {fileID: 0}
+    - target: {fileID: -4958002554537561020, guid: a37879bb3cc24434f918e8ed4a1e1731, type: 3}
+      propertyPath: m_TagString
+      value: Car
+      objectReference: {fileID: 0}
+    - target: {fileID: -4927377428901077754, guid: a37879bb3cc24434f918e8ed4a1e1731, type: 3}
+      propertyPath: m_TagString
+      value: Car
+      objectReference: {fileID: 0}
+    - target: {fileID: -3959620455479713198, guid: a37879bb3cc24434f918e8ed4a1e1731, type: 3}
+      propertyPath: m_TagString
+      value: Car
+      objectReference: {fileID: 0}
+    - target: {fileID: -2221622455862490588, guid: a37879bb3cc24434f918e8ed4a1e1731, type: 3}
+      propertyPath: m_TagString
+      value: Car
+      objectReference: {fileID: 0}
+    - target: {fileID: -1760714182489039777, guid: a37879bb3cc24434f918e8ed4a1e1731, type: 3}
+      propertyPath: m_TagString
+      value: Car
+      objectReference: {fileID: 0}
+    - target: {fileID: -1233166793127470629, guid: a37879bb3cc24434f918e8ed4a1e1731, type: 3}
+      propertyPath: m_TagString
+      value: Car
+      objectReference: {fileID: 0}
+    - target: {fileID: -1186035133365389581, guid: a37879bb3cc24434f918e8ed4a1e1731, type: 3}
+      propertyPath: m_TagString
+      value: Car
+      objectReference: {fileID: 0}
+    - target: {fileID: -1155539022466507060, guid: a37879bb3cc24434f918e8ed4a1e1731, type: 3}
+      propertyPath: m_TagString
+      value: Car
+      objectReference: {fileID: 0}
+    - target: {fileID: -899361499477334592, guid: a37879bb3cc24434f918e8ed4a1e1731, type: 3}
+      propertyPath: m_TagString
+      value: Car
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: a37879bb3cc24434f918e8ed4a1e1731, type: 3}
       propertyPath: m_Name
       value: Car_Export_01
@@ -632,6 +692,66 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: a37879bb3cc24434f918e8ed4a1e1731, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a37879bb3cc24434f918e8ed4a1e1731, type: 3}
+      propertyPath: m_TagString
+      value: Car
+      objectReference: {fileID: 0}
+    - target: {fileID: 1353473475764155263, guid: a37879bb3cc24434f918e8ed4a1e1731, type: 3}
+      propertyPath: m_TagString
+      value: Car
+      objectReference: {fileID: 0}
+    - target: {fileID: 1788845593105122680, guid: a37879bb3cc24434f918e8ed4a1e1731, type: 3}
+      propertyPath: m_TagString
+      value: Car
+      objectReference: {fileID: 0}
+    - target: {fileID: 3594729110761598807, guid: a37879bb3cc24434f918e8ed4a1e1731, type: 3}
+      propertyPath: m_TagString
+      value: Car
+      objectReference: {fileID: 0}
+    - target: {fileID: 4804613825940722711, guid: a37879bb3cc24434f918e8ed4a1e1731, type: 3}
+      propertyPath: m_TagString
+      value: Car
+      objectReference: {fileID: 0}
+    - target: {fileID: 4917896045193486001, guid: a37879bb3cc24434f918e8ed4a1e1731, type: 3}
+      propertyPath: m_TagString
+      value: Car
+      objectReference: {fileID: 0}
+    - target: {fileID: 4986175147392493085, guid: a37879bb3cc24434f918e8ed4a1e1731, type: 3}
+      propertyPath: m_TagString
+      value: Car
+      objectReference: {fileID: 0}
+    - target: {fileID: 5367826220372876845, guid: a37879bb3cc24434f918e8ed4a1e1731, type: 3}
+      propertyPath: m_TagString
+      value: Car
+      objectReference: {fileID: 0}
+    - target: {fileID: 5597133531589406711, guid: a37879bb3cc24434f918e8ed4a1e1731, type: 3}
+      propertyPath: m_TagString
+      value: Car
+      objectReference: {fileID: 0}
+    - target: {fileID: 5800967526154409366, guid: a37879bb3cc24434f918e8ed4a1e1731, type: 3}
+      propertyPath: m_TagString
+      value: Car
+      objectReference: {fileID: 0}
+    - target: {fileID: 6824301575945496604, guid: a37879bb3cc24434f918e8ed4a1e1731, type: 3}
+      propertyPath: m_TagString
+      value: Car
+      objectReference: {fileID: 0}
+    - target: {fileID: 7625509594765446190, guid: a37879bb3cc24434f918e8ed4a1e1731, type: 3}
+      propertyPath: m_TagString
+      value: Car
+      objectReference: {fileID: 0}
+    - target: {fileID: 7705468769360568608, guid: a37879bb3cc24434f918e8ed4a1e1731, type: 3}
+      propertyPath: m_TagString
+      value: Car
+      objectReference: {fileID: 0}
+    - target: {fileID: 8195279967789304033, guid: a37879bb3cc24434f918e8ed4a1e1731, type: 3}
+      propertyPath: m_TagString
+      value: Car
+      objectReference: {fileID: 0}
+    - target: {fileID: 8203773598355586251, guid: a37879bb3cc24434f918e8ed4a1e1731, type: 3}
+      propertyPath: m_TagString
+      value: Car
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -781,7 +901,7 @@ MeshCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 5
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -8635930454626439884, guid: a37879bb3cc24434f918e8ed4a1e1731, type: 3}
 --- !u!114 &2833192665666475380

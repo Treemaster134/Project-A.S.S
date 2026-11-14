@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 3
   tags:
   - RenderTextureCamera
+  - Car
   layers:
   - Default
   - TransparentFX
