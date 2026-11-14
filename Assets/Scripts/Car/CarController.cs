@@ -1,67 +1,101 @@
 using System.Numerics;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Serialization;
 using Vector2 = UnityEngine.Vector2;
+using Vector3 = UnityEngine.Vector3;
 
 public class CarController : MonoBehaviour
 {
+    
     private Rigidbody rb;
-    [SerializeField]private WheelController[] wheels;
+    [Header("Car Components")]
+    [FormerlySerializedAs("wheels")] [SerializeField]private WheelController[] frontWheels;
     [SerializeField]private MultiplierComponent Engine;
     [SerializeField]private MultiplierComponent QPanelFL;
     [SerializeField]private MultiplierComponent QPanelFR;
 
+    [Header("motor and steering")]
     [SerializeField]private float motorforce = 10;
     [SerializeField]private float brakeforce = 10;
     [SerializeField]private float maxSteerAngle;
+    [SerializeField]private float maxSpeed = 100;
+
+    [Header("Acceleration")] 
+    [SerializeField]private float accelerate = 10;
     
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    float currentMotorTorque;
+    private float currentAngle;
+    private Vector2 movement;
+    
+    
     void Start()
     {
         rb = GetComponent<Rigidbody>();
     }
-
-    // Update is called once per frame
+    
     void Update()
     {
+        float currentSpeed = Vector3.Dot(transform.forward, rb.linearVelocity);
+        float speedFactor = Mathf.InverseLerp(0, maxSpeed, Mathf.Abs(currentSpeed));
+            if(movement.y == 0)
+            {
+                currentMotorTorque = Mathf.Lerp(currentMotorTorque, 0, speedFactor * 2);
+            }
+            else
+            {
+                currentMotorTorque = Mathf.Lerp(motorforce, motorforce * 2 , accelerate);
+            }
+            Debug.Log(currentSpeed);
+            
+            for (int i = 0; i < frontWheels.Length; i++)
+            {
+                frontWheels[i]._col.motorTorque = currentMotorTorque * movement.y;
+            }
         
+        
+        // Sida 
+       
+            for (int i = 0; i < frontWheels.Length; i++)
+            {
+                frontWheels[i]._col.steerAngle = movement.x * maxSteerAngle;
+            }
     }
 
     public void Brake(InputAction.CallbackContext context)
     {
-        for (int i = 0; i < wheels.Length; i++)
+        for (int i = 0; i < frontWheels.Length; i++)
         {
-            wheels[i]._col.brakeTorque = brakeforce;
+            frontWheels[i]._col.brakeTorque = brakeforce;
         }
 
         if (context.canceled)
         {
-            for (int i = 0; i < wheels.Length; i++)
+            for (int i = 0; i < frontWheels.Length; i++)
             {
-                wheels[i]._col.brakeTorque = 0;
+                frontWheels[i]._col.brakeTorque = 0;
             }
         }
     }
 
     public void Move(InputAction.CallbackContext context)
     {
-        // Köra fram/bak
-        if (context.ReadValue<Vector2>().y != 0)
+        
+        movement = context.ReadValue<Vector2>();
+        for (int i = 0; i < frontWheels.Length; i++)
         {
-            for (int i = 0; i < wheels.Length; i++)
-            {
-                wheels[i]._col.motorTorque = motorforce * context.ReadValue<Vector2>().y;
-            }
+            frontWheels[i]._col.motorTorque = motorforce * movement.y;
         }
-        // Sida 
-        if (context.ReadValue<Vector2>().x != 0)
+        
+        //Apply multiplyer to max-steer
+        if (movement.x < 0)
         {
-            for (int i = 0; i < wheels.Length; i++)
-            {
-                wheels[i]._col.steerAngle = context.ReadValue<Vector2>().x * maxSteerAngle;
-            }
+            currentAngle = maxSteerAngle * QPanelFL.Multiplier;
         }
-
+        else if (movement.x > 0)
+        {
+            currentAngle = maxSteerAngle * QPanelFR.Multiplier;
+        }
     }
     public Vector2 GetMovementInput()
     {
