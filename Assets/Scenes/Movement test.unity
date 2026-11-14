@@ -715,17 +715,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3788855681087853217, guid: bf9a4d9c3d3d71a4ea7ecfa61da7815d, type: 3}
   m_PrefabInstance: {fileID: 8111377537180123715}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &806531844 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 9110410266049407309, guid: bf9a4d9c3d3d71a4ea7ecfa61da7815d, type: 3}
-  m_PrefabInstance: {fileID: 8111377537180123715}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dcd16bb252bbcc4478458917fd5a5ad8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CollisionController
 --- !u!1001 &981846093
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2042,29 +2031,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 163602763693136570, guid: bf9a4d9c3d3d71a4ea7ecfa61da7815d, type: 3}
-      propertyPath: m_Convex
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 732154084400922131, guid: bf9a4d9c3d3d71a4ea7ecfa61da7815d, type: 3}
-      propertyPath: m_Convex
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1739138895783622854, guid: bf9a4d9c3d3d71a4ea7ecfa61da7815d, type: 3}
-      propertyPath: m_Convex
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3363686461194453345, guid: bf9a4d9c3d3d71a4ea7ecfa61da7815d, type: 3}
       propertyPath: m_Name
       value: Car
-      objectReference: {fileID: 0}
-    - target: {fileID: 3363686461194453345, guid: bf9a4d9c3d3d71a4ea7ecfa61da7815d, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3518629804092911643, guid: bf9a4d9c3d3d71a4ea7ecfa61da7815d, type: 3}
-      propertyPath: m_Convex
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3788855681087853217, guid: bf9a4d9c3d3d71a4ea7ecfa61da7815d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2105,42 +2074,6 @@ PrefabInstance:
     - target: {fileID: 3788855681087853217, guid: bf9a4d9c3d3d71a4ea7ecfa61da7815d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4094136339300629200, guid: bf9a4d9c3d3d71a4ea7ecfa61da7815d, type: 3}
-      propertyPath: m_Convex
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7149190100243906648, guid: bf9a4d9c3d3d71a4ea7ecfa61da7815d, type: 3}
-      propertyPath: m_Convex
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7388569338609138211, guid: bf9a4d9c3d3d71a4ea7ecfa61da7815d, type: 3}
-      propertyPath: m_Convex
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7631484339241281752, guid: bf9a4d9c3d3d71a4ea7ecfa61da7815d, type: 3}
-      propertyPath: multiplier
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7631484339241281752, guid: bf9a4d9c3d3d71a4ea7ecfa61da7815d, type: 3}
-      propertyPath: collisionController
-      value: 
-      objectReference: {fileID: 806531844}
-    - target: {fileID: 7860146035872906216, guid: bf9a4d9c3d3d71a4ea7ecfa61da7815d, type: 3}
-      propertyPath: m_Convex
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7962621707666427496, guid: bf9a4d9c3d3d71a4ea7ecfa61da7815d, type: 3}
-      propertyPath: m_Convex
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8438566146363056814, guid: bf9a4d9c3d3d71a4ea7ecfa61da7815d, type: 3}
-      propertyPath: m_Convex
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8664304505720299025, guid: bf9a4d9c3d3d71a4ea7ecfa61da7815d, type: 3}
-      propertyPath: m_Convex
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

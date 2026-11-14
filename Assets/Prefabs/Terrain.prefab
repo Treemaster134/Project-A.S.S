@@ -43,10 +43,10 @@ Terrain:
   m_Enabled: 1
   serializedVersion: 6
   m_TerrainData: {fileID: 15600000, guid: 102dd51d0b6178941abb3eff4be009b5, type: 2}
-  m_TreeDistance: 374
-  m_TreeBillboardDistance: 304
-  m_TreeCrossFadeLength: 25
-  m_TreeMaximumFullLODCount: 50
+  m_TreeDistance: 535
+  m_TreeBillboardDistance: 240
+  m_TreeCrossFadeLength: 20
+  m_TreeMaximumFullLODCount: 100
   m_DetailObjectDistance: 0
   m_DetailObjectDensity: 1
   m_HeightmapPixelError: 5
@@ -80,7 +80,7 @@ TerrainCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2156676799999085561}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: ddae4da7525aad4419d9ea83fb7b9a7c, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
