@@ -44,7 +44,6 @@ public class CarController : MonoBehaviour
         float speedFactor = Mathf.InverseLerp(0, maxSpeed, Mathf.Abs(currentSpeed));
         if (movement.y == 0 && currentMotorTorque == 0)
         {
-            Debug.Log("Y 0");
             currentMotorTorque = 0;
             currentBrakeTorque = 1000;
         }
@@ -80,11 +79,6 @@ public class CarController : MonoBehaviour
     {
         
         movement = context.ReadValue<Vector2>();
-        for (int i = 0; i < frontWheels.Length; i++)
-        {
-            frontWheels[i]._col.motorTorque = motorforce * movement.y;
-        }
-        
         //Apply multiplyer to max-steer
         if (movement.x < 0)
         {
