@@ -2,15 +2,16 @@ using UnityEngine;
 
 public class CodriverBehavior : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    [SerializeField] private AudioSource negativeClips;
+    [SerializeField] private AudioSource monologue;
 
-    // Update is called once per frame
-    void Update()
+    public void PlayMonologue()
     {
-        
+        monologue.Play();
+    }
+    
+    public void PlayCrashReaction()
+    {
+        negativeClips.Play();
     }
 }
