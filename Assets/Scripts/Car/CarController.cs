@@ -57,7 +57,7 @@ public class CarController : MonoBehaviour
             frontWheels[i]._col.brakeTorque = currentBrakeTorque;
             
             // Sida 
-            frontWheels[i]._col.steerAngle = movement.x * maxSteerAngle;
+            frontWheels[i]._col.steerAngle = movement.x * currentAngle;
             
         }
     }
