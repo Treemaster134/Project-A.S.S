@@ -1,10 +1,14 @@
 using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof(Rigidbody))]
 public class CollisionController : MonoBehaviour
 {
     [SerializeField] private int MaxHitsPerCollision;
+    [SerializeField] private int componentsLeft = 0;
+    [SerializeField] private int minimumComponentsLeft = 0;
+    [SerializeField] private string GameOverSceneName;
     private CarComponent[] components;
     private int registrations = 0;
     private CodriverBehavior codriver;
@@ -21,7 +25,17 @@ public class CollisionController : MonoBehaviour
         {
             for (int i = 0; i < registrations; i++)
             {
-                components[i].Hit();
+                if (components[i].Hit())
+                {
+                    //component broke
+                    componentsLeft--;
+
+                    if (componentsLeft < minimumComponentsLeft)
+                    {
+                        SceneManager.LoadScene(GameOverSceneName);
+                        return;
+                    }
+                }
             }
             
             codriver.PlayCrashReaction();
