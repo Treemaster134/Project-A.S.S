@@ -11,5 +11,8 @@ public class CarComponent : MonoBehaviour
         collisionController.RegisterCollision(this);
     }
 
-    public virtual void Hit() { }
+    public virtual bool Hit()
+    {
+        return false;
+    }
 }

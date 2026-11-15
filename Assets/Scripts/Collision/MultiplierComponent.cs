@@ -7,8 +7,9 @@ public class MultiplierComponent : CarComponent
     [SerializeField] private float MultiplierDelta;
     [SerializeField] private float MultiplierUpperBound;
     [SerializeField] private float MultiplierLowerBound;
-    public override void Hit()
+    public override bool Hit()
     {
         multiplier = Mathf.Clamp(Multiplier + MultiplierDelta, MultiplierLowerBound, MultiplierUpperBound);
+        return false;
     }
 }
