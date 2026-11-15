@@ -17,7 +17,7 @@ public class CollisionController : MonoBehaviour
 
     void Update()
     {
-        if (registrations >= 0)
+        if (registrations > 0)
         {
             for (int i = 0; i < registrations; i++)
             {

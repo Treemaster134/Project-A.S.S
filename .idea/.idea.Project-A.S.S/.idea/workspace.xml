@@ -12,6 +12,29 @@
   <component name="ChangeListManager">
     <list default="true" id="5e035f23-90dd-49bf-8ea5-c9901aaaf572" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Project-A.S.S/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Project-A.S.S/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/MainMenu/Intro.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/MainMenu/Intro.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/MainMenu/Wait.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/MainMenu/Wait.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/music/512285__isohoo__accordion.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/music/512285__isohoo__accordion.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/music/accordion_sample2.ogg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/music/accordion_sample2.ogg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/music/tango.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/music/tango.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/sfx/523365__lilmati__bomb-explosion.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Audio/sfx/523365__lilmati__bomb-explosion.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/sfx/614627__johnnydekk__screeching-tyres-tires.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Audio/sfx/614627__johnnydekk__screeching-tyres-tires.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/sfx/cardoorperkele.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Audio/sfx/cardoorperkele.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/sfx/voice lines/AJA.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Audio/sfx/voice lines/AJA.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/sfx/voice lines/AJAJA_1.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Audio/sfx/voice lines/AJAJA_1.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/sfx/voice lines/AJAJA_2.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Audio/sfx/voice lines/AJAJA_2.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/sfx/voice lines/PERKELE.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Audio/sfx/voice lines/PERKELE.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/sfx/voice lines/SATANA.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Audio/sfx/voice lines/SATANA.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/sfx/voice lines/VITTU_2.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Audio/sfx/voice lines/VITTU_2.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Font/Mikodacs SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Font/Mikodacs SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/LevelScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/LevelScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Audio/AudioController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Audio/AudioController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Collision/CollisionController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Collision/CollisionController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Speedometer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Speedometer.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,7 +45,15 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Audio/AudioController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Car/CarController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Car/WheelController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Collision/BreakableComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Collision/CarComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Collision/CollisionController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/NPC/CodriverBehavior.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/SceneChanger.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/Speedometer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@57d0e36f6123/InputSystem/Utilities/DelegateHelpers.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
@@ -102,6 +133,7 @@
       <workItem from="1794642422393" duration="7140000" />
       <workItem from="1794666443026" duration="1410000" />
       <workItem from="1794690846023" duration="2306000" />
+      <workItem from="1794734437259" duration="2532000" />
     </task>
     <servers />
   </component>
