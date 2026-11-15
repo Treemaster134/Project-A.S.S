@@ -5872,6 +5872,7 @@ GameObject:
   - component: {fileID: 8841903966019808365}
   - component: {fileID: 2878802703022549329}
   - component: {fileID: 1891112036174734637}
+  - component: {fileID: 8637281246211221595}
   m_Layer: 0
   m_Name: WORKING CAR!
   m_TagString: Untagged
@@ -5923,7 +5924,7 @@ Rigidbody:
   m_ImplicitTensor: 1
   m_UseGravity: 1
   m_IsKinematic: 0
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!114 &8841903966019808365
@@ -5943,9 +5944,9 @@ MonoBehaviour:
   accelerationMultiplier: 10
   maxSteeringAngle: 28
   steeringSpeed: 0.749
-  brakeForce: 424
+  brakeForce: 600
   decelerationMultiplier: 4
-  handbrakeDriftMultiplier: 4
+  handbrakeDriftMultiplier: 2
   bodyMassCenter: {x: 0, y: 0, z: 0}
   frontLeftMesh: {fileID: 5758521474553552222}
   frontLeftCollider: {fileID: 6766834106864662298}
@@ -6002,6 +6003,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CodriverBehavior
   negativeClips: {fileID: 7519411166369250640}
+--- !u!114 &8637281246211221595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8545987114250462898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e9165b7b2d078d42a99442b5fa62fdb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PrometeoWhisperer
+  maxCarSpeed: 200
+  maxAcceleration: 30
+  car: {fileID: 8841903966019808365}
+  engine: {fileID: 436898253377358285}
+  Left: {fileID: 1298084299272718369}
+  Right: {fileID: 7916172374465813762}
 --- !u!1 &8799816448394324754
 GameObject:
   m_ObjectHideFlags: 0
@@ -6424,7 +6443,7 @@ PrefabInstance:
       addedObject: {fileID: 3235040183272389857}
     - targetCorrespondingSourceObject: {fileID: 5800967526154409366, guid: a37879bb3cc24434f918e8ed4a1e1731, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 5727255652556797173}
+      addedObject: {fileID: 436898253377358285}
     - targetCorrespondingSourceObject: {fileID: 1788845593105122680, guid: a37879bb3cc24434f918e8ed4a1e1731, type: 3}
       insertIndex: -1
       addedObject: {fileID: 4436931636736586974}
@@ -6442,7 +6461,7 @@ PrefabInstance:
       addedObject: {fileID: 8109075253621007834}
     - targetCorrespondingSourceObject: {fileID: -8111536118453012485, guid: a37879bb3cc24434f918e8ed4a1e1731, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 4770247269456671081}
+      addedObject: {fileID: 1298084299272718369}
     - targetCorrespondingSourceObject: {fileID: -5901118724748424300, guid: a37879bb3cc24434f918e8ed4a1e1731, type: 3}
       insertIndex: -1
       addedObject: {fileID: 8047637712631100011}
@@ -6469,7 +6488,7 @@ PrefabInstance:
       addedObject: {fileID: 1730539549273970975}
     - targetCorrespondingSourceObject: {fileID: 7705468769360568608, guid: a37879bb3cc24434f918e8ed4a1e1731, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 4014677048242765022}
+      addedObject: {fileID: 7916172374465813762}
     - targetCorrespondingSourceObject: {fileID: 4804613825940722711, guid: a37879bb3cc24434f918e8ed4a1e1731, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1327580822141379182}
@@ -6531,7 +6550,7 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -5675952172405300604, guid: a37879bb3cc24434f918e8ed4a1e1731, type: 3}
---- !u!114 &4770247269456671081
+--- !u!114 &1298084299272718369
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6540,12 +6559,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 25252641214421231}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d434250b5b9ca8440a10cb618d6d5326, type: 3}
+  m_Script: {fileID: 11500000, guid: 790668c15483b5449a0a1bac330aea68, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::BreakableComponent
+  m_EditorClassIdentifier: Assembly-CSharp::MultiplierComponent
   collisionController: {fileID: 2878802703022549329}
-  direction: 0
-  health: 1
+  multiplier: 1
+  MultiplierDelta: -0.1
+  MultiplierUpperBound: 1
+  MultiplierLowerBound: 0.1
 --- !u!4 &629666915872131327 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: a37879bb3cc24434f918e8ed4a1e1731, type: 3}
@@ -6768,7 +6789,7 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
   m_Convex: 1
   m_CookingOptions: 30
@@ -6968,7 +6989,7 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -4899274875925134708, guid: a37879bb3cc24434f918e8ed4a1e1731, type: 3}
---- !u!114 &5727255652556797173
+--- !u!114 &436898253377358285
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6977,12 +6998,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 6896861502739856002}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d434250b5b9ca8440a10cb618d6d5326, type: 3}
+  m_Script: {fileID: 11500000, guid: 790668c15483b5449a0a1bac330aea68, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::BreakableComponent
+  m_EditorClassIdentifier: Assembly-CSharp::MultiplierComponent
   collisionController: {fileID: 2878802703022549329}
-  direction: 2
-  health: 1
+  multiplier: 1
+  MultiplierDelta: 0.1
+  MultiplierUpperBound: 2
+  MultiplierLowerBound: 1
 --- !u!1 &7338875906615201332 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7705468769360568608, guid: a37879bb3cc24434f918e8ed4a1e1731, type: 3}
@@ -7010,7 +7033,7 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -2519111159791474126, guid: a37879bb3cc24434f918e8ed4a1e1731, type: 3}
---- !u!114 &4014677048242765022
+--- !u!114 &7916172374465813762
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -7019,12 +7042,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 7338875906615201332}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d434250b5b9ca8440a10cb618d6d5326, type: 3}
+  m_Script: {fileID: 11500000, guid: 790668c15483b5449a0a1bac330aea68, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::BreakableComponent
+  m_EditorClassIdentifier: Assembly-CSharp::MultiplierComponent
   collisionController: {fileID: 2878802703022549329}
-  direction: 1
-  health: 1
+  multiplier: 1
+  MultiplierDelta: -0.1
+  MultiplierUpperBound: 1
+  MultiplierLowerBound: 0.1
 --- !u!1 &7541013708950811467 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -1760714182489039777, guid: a37879bb3cc24434f918e8ed4a1e1731, type: 3}
