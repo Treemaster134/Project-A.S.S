@@ -8,7 +8,8 @@ public class SceneChanger : MonoBehaviour
     [SerializeField] private string sceneName;
     [SerializeField] private string enterActionName;
     [SerializeField] private string startTriggerName;
-    private bool ready = false;
+    public bool ready;
+    public bool animated;
     private InputAction pressEnter;
     private Animator anim;
     public void StartAnimationFinish()
@@ -32,7 +33,15 @@ public class SceneChanger : MonoBehaviour
         if (ready && pressEnter.IsPressed())
         {
             ready = false;
-            anim.SetTrigger(startTriggerName);
+
+            if (animated)
+            {
+                anim.SetTrigger(startTriggerName);
+            }
+            else
+            {
+                StartAnimationFinish();
+            }
         }
     }
 }

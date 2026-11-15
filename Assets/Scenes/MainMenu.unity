@@ -404,6 +404,8 @@ MonoBehaviour:
   sceneName: SampleScene
   enterActionName: Enter
   startTriggerName: Start
+  ready: 0
+  animated: 1
 --- !u!95 &159623542
 Animator:
   serializedVersion: 7
