@@ -8,16 +8,13 @@ public class PrometeoWhisperer : MonoBehaviour
 
     [SerializeField] int maxAcceleration = 10;
 
-    [Header("Max Brakes")] [SerializeField]
-    bool wantBrakes = true;
-
-    [SerializeField]  float minBrakeSpeed = 0.5f;
+    [Header("Max Brakes")]
+    [SerializeField]  float minBrakeSpeed;
     private float BaseBrakeSpeed;
-     private float brakeSpeed;
+    private float brakeSpeed;
 
-    [Header("Components")] [SerializeField]
-    PrometeoCarController car;
-
+    [Header("Components")] 
+    [SerializeField] PrometeoCarController car;
     [SerializeField] MultiplierComponent engine;
     [SerializeField] MultiplierComponent Left;
     [SerializeField] MultiplierComponent Right;
