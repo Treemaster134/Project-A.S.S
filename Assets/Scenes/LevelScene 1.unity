@@ -1237,6 +1237,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3447232882221739534, guid: 5bc972e9c15311a46be04e16fd7c8fa5, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5185159951822540475, guid: 5bc972e9c15311a46be04e16fd7c8fa5, type: 3}
+      propertyPath: m_Interpolate
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7670450108940486571, guid: 5bc972e9c15311a46be04e16fd7c8fa5, type: 3}
       propertyPath: m_LocalPosition.x
       value: 128.6
@@ -1281,10 +1289,33 @@ PrefabInstance:
       propertyPath: m_Name
       value: WORKING CAR!
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 8841903966019808365, guid: 5bc972e9c15311a46be04e16fd7c8fa5, type: 3}
+      propertyPath: brakeForce
+      value: 600
+      objectReference: {fileID: 0}
+    - target: {fileID: 8841903966019808365, guid: 5bc972e9c15311a46be04e16fd7c8fa5, type: 3}
+      propertyPath: handbrakeDriftMultiplier
+      value: 2
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 5727255652556797173, guid: 5bc972e9c15311a46be04e16fd7c8fa5, type: 3}
+    - {fileID: 4014677048242765022, guid: 5bc972e9c15311a46be04e16fd7c8fa5, type: 3}
+    - {fileID: 4770247269456671081, guid: 5bc972e9c15311a46be04e16fd7c8fa5, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8545987114250462898, guid: 5bc972e9c15311a46be04e16fd7c8fa5, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1080360075}
+    - targetCorrespondingSourceObject: {fileID: 6896861502739856002, guid: 5bc972e9c15311a46be04e16fd7c8fa5, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 991373437}
+    - targetCorrespondingSourceObject: {fileID: 25252641214421231, guid: 5bc972e9c15311a46be04e16fd7c8fa5, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 768860694}
+    - targetCorrespondingSourceObject: {fileID: 7338875906615201332, guid: 5bc972e9c15311a46be04e16fd7c8fa5, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 323687489}
   m_SourcePrefab: {fileID: 100100000, guid: 5bc972e9c15311a46be04e16fd7c8fa5, type: 3}
 --- !u!1001 &121384835
 PrefabInstance:
@@ -5801,6 +5832,28 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4031795926433413590, guid: 2151fd3158b1e9440922736cb061926e, type: 3}
   m_PrefabInstance: {fileID: 320346747}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &323687483 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7338875906615201332, guid: 5bc972e9c15311a46be04e16fd7c8fa5, type: 3}
+  m_PrefabInstance: {fileID: 111134566}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &323687489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 323687483}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 790668c15483b5449a0a1bac330aea68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MultiplierComponent
+  collisionController: {fileID: 1080360072}
+  multiplier: 1
+  MultiplierDelta: -0.1
+  MultiplierUpperBound: 1
+  MultiplierLowerBound: 0.1
 --- !u!1001 &326428905
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10483,6 +10536,28 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4031795926433413590, guid: 2151fd3158b1e9440922736cb061926e, type: 3}
   m_PrefabInstance: {fileID: 750831821}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &768860688 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 25252641214421231, guid: 5bc972e9c15311a46be04e16fd7c8fa5, type: 3}
+  m_PrefabInstance: {fileID: 111134566}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &768860694
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 768860688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 790668c15483b5449a0a1bac330aea68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MultiplierComponent
+  collisionController: {fileID: 1080360072}
+  multiplier: 1
+  MultiplierDelta: -0.1
+  MultiplierUpperBound: 1
+  MultiplierLowerBound: 0.1
 --- !u!1001 &769835823
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13148,6 +13223,28 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4031795926433413590, guid: 2151fd3158b1e9440922736cb061926e, type: 3}
   m_PrefabInstance: {fileID: 990285670}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &991373431 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6896861502739856002, guid: 5bc972e9c15311a46be04e16fd7c8fa5, type: 3}
+  m_PrefabInstance: {fileID: 111134566}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &991373437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 991373431}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 790668c15483b5449a0a1bac330aea68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MultiplierComponent
+  collisionController: {fileID: 1080360072}
+  multiplier: 1
+  MultiplierDelta: 0.1
+  MultiplierUpperBound: 2
+  MultiplierLowerBound: 1
 --- !u!1001 &997593595
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14246,6 +14343,46 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7670450108940486571, guid: 5bc972e9c15311a46be04e16fd7c8fa5, type: 3}
   m_PrefabInstance: {fileID: 111134566}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1080360072 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2878802703022549329, guid: 5bc972e9c15311a46be04e16fd7c8fa5, type: 3}
+  m_PrefabInstance: {fileID: 111134566}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 239227085}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcd16bb252bbcc4478458917fd5a5ad8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CollisionController
+--- !u!114 &1080360073 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8841903966019808365, guid: 5bc972e9c15311a46be04e16fd7c8fa5, type: 3}
+  m_PrefabInstance: {fileID: 111134566}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 239227085}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0fefceefe666bb4682b272ec8c5bdd0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1080360075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 239227085}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e9165b7b2d078d42a99442b5fa62fdb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PrometeoWhisperer
+  maxCarSpeed: 200
+  maxAcceleration: 30
+  car: {fileID: 1080360073}
+  engine: {fileID: 991373437}
+  Left: {fileID: 768860694}
+  Right: {fileID: 323687489}
 --- !u!1001 &1080404243
 PrefabInstance:
   m_ObjectHideFlags: 0
