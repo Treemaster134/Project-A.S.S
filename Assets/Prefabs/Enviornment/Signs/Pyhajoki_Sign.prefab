@@ -59,5 +59,62 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 0bbe342201f94f9498615a91dc403199, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4524510185629260498}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 0bbe342201f94f9498615a91dc403199, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5182075958201051476}
   m_SourcePrefab: {fileID: 100100000, guid: 0bbe342201f94f9498615a91dc403199, type: 3}
+--- !u!1 &5846545199325514801 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 0bbe342201f94f9498615a91dc403199, type: 3}
+  m_PrefabInstance: {fileID: 6765092941944664416}
+  m_PrefabAsset: {fileID: 0}
+--- !u!136 &4524510185629260498
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5846545199325514801}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.06
+  m_Height: 4.863065
+  m_Direction: 1
+  m_Center: {x: -0.42, y: 1.3365113, z: 0.008992542}
+--- !u!136 &5182075958201051476
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5846545199325514801}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.06
+  m_Height: 4.863065
+  m_Direction: 1
+  m_Center: {x: 0.46, y: 1.3365113, z: 0.008992542}
