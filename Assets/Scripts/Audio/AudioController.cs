@@ -24,9 +24,8 @@ public class AudioController : MonoBehaviour
     private void Update()
     {
         isIdle = !Input.GetKey(KeyCode.W) && !Input.GetKey(KeyCode.S);
-        Debug.Log(isIdle);
-
-        if (isIdle && audio.clip != idleSFX)
+        
+        if (isIdle && (audio.clip != idleSFX || !audio.isPlaying))
         {
             audio.volume = 0.3f;
             Debug.Log("IT IS IDLE");
@@ -34,7 +33,7 @@ public class AudioController : MonoBehaviour
             audio.Play();
 
         }
-        else if (!isIdle && audio.clip != moveSFX)
+        else if (!isIdle && (audio.clip != moveSFX || !audio.isPlaying))
         {
             audio.volume = 0.7f;
             Debug.Log("IT IS MOVING");
