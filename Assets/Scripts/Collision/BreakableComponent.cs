@@ -20,6 +20,11 @@ public class BreakableComponent : CarComponent
 
     bool broken = false;
 
+
+    [SerializeField]AudioClip crashSound;
+
+    AudioSource audioSource;
+
     private void Update()
     {
         if(broken)
@@ -32,6 +37,9 @@ public class BreakableComponent : CarComponent
     {
         if (--health <= 0)
         {
+            audioSource = gameObject.AddComponent<AudioSource>();
+            audioSource.clip = crashSound;
+            audioSource.Play();
             rb = gameObject.AddComponent<Rigidbody>();
             switch (direction)
             {
