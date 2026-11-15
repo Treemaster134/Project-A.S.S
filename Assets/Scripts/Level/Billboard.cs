@@ -4,7 +4,15 @@ using UnityEngine;
 public class Billboard : MonoBehaviour
 {
     [SerializeField]private Camera cam;
-    public bool rotate = true;
+        public bool rotate = true;
+
+    void Start()
+    {
+        if (cam == null)
+        {
+            cam = GameObject.Find("Main Camera").GetComponent<Camera>();
+        }
+    }
 
     // Update is called once per frame
     void LateUpdate()

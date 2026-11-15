@@ -34,15 +34,15 @@ PrefabInstance:
       objectReference: {fileID: 7108339969198208228, guid: 477be5e783844b04e88781925ceda926, type: 3}
     - target: {fileID: 5445436217395070107, guid: 1760365916a3bf94f9d591f62491b6dd, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 130.83
+      value: 613.3081
       objectReference: {fileID: 0}
     - target: {fileID: 5445436217395070107, guid: 1760365916a3bf94f9d591f62491b6dd, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -43.55
+      value: 11.513366
       objectReference: {fileID: 0}
     - target: {fileID: 5445436217395070107, guid: 1760365916a3bf94f9d591f62491b6dd, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 87
+      value: 200.69733
       objectReference: {fileID: 0}
     - target: {fileID: 5445436217395070107, guid: 1760365916a3bf94f9d591f62491b6dd, type: 3}
       propertyPath: m_LocalRotation.w
@@ -81,12 +81,16 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8520163138267197342, guid: 1760365916a3bf94f9d591f62491b6dd, type: 3}
+      propertyPath: billboard
+      value: 
+      objectReference: {fileID: 4720356503999712130}
+    - target: {fileID: 8520163138267197342, guid: 1760365916a3bf94f9d591f62491b6dd, type: 3}
       propertyPath: spinSpeed
       value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 8520163138267197342, guid: 1760365916a3bf94f9d591f62491b6dd, type: 3}
       propertyPath: endPoint.x
-      value: -19.8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8520163138267197342, guid: 1760365916a3bf94f9d591f62491b6dd, type: 3}
       propertyPath: runningSpeed
@@ -103,6 +107,17 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 8081107484920896558}
   m_SourcePrefab: {fileID: 100100000, guid: 1760365916a3bf94f9d591f62491b6dd, type: 3}
+--- !u!114 &4720356503999712130 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1793614146437943434, guid: 1760365916a3bf94f9d591f62491b6dd, type: 3}
+  m_PrefabInstance: {fileID: 6441873336205515528}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8957690967842295636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c330f798929437144baf5c0578dceef2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Billboard
 --- !u!1 &8957690967842295636 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2681398602535801948, guid: 1760365916a3bf94f9d591f62491b6dd, type: 3}
