@@ -5990,16 +5990,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CollisionController
   MaxHitsPerCollision: 1
-  componentsLeft: 10
-  minimumComponentsLeft: 2
-  heavyDamageThreshold: 6
-  mildDamageThreshold: 8
+  componentsLeft: 12
+  minimumComponentsLeft: 5
+  heavyDamageThreshold: 7
+  mildDamageThreshold: 9
   GameOverSceneName: GameOverScene
   MildDamageSmoke: {fileID: 2752226935156408837}
   HeavyDamageFire: {fileID: 2069952955016761546}
   explosion: {fileID: 1348360077072318918}
   crashAudioSource: {fileID: 903494953922551215}
-  crashSound: {fileID: 8300000, guid: 4c59edeb22a60484185450fcad2c09db, type: 3}
+  crashSound: {fileID: 8300000, guid: 683d4a3c3229e4f40986914e108af230, type: 3}
   explosionSound: {fileID: 8300000, guid: 4c59edeb22a60484185450fcad2c09db, type: 3}
 --- !u!114 &1891112036174734637
 MonoBehaviour:
@@ -6028,7 +6028,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PrometeoWhisperer
   maxCarSpeed: 200
   maxAcceleration: 30
-  wantBrakes: 1
   minBrakeSpeed: 0.5
   car: {fileID: 8841903966019808365}
   engine: {fileID: 436898253377358285}
@@ -6703,7 +6702,6 @@ MonoBehaviour:
   collisionController: {fileID: 2878802703022549329}
   direction: 2
   health: 1
-  crashSound: {fileID: 8300000, guid: 683d4a3c3229e4f40986914e108af230, type: 3}
 --- !u!1 &2390492267188348032 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -5901118724748424300, guid: a37879bb3cc24434f918e8ed4a1e1731, type: 3}
@@ -6746,7 +6744,6 @@ MonoBehaviour:
   collisionController: {fileID: 2878802703022549329}
   direction: 0
   health: 1
-  crashSound: {fileID: 8300000, guid: 683d4a3c3229e4f40986914e108af230, type: 3}
 --- !u!1 &3022022528871142970 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -6428925032311473874, guid: a37879bb3cc24434f918e8ed4a1e1731, type: 3}
@@ -6789,7 +6786,6 @@ MonoBehaviour:
   collisionController: {fileID: 2878802703022549329}
   direction: 1
   health: 1
-  crashSound: {fileID: 8300000, guid: 683d4a3c3229e4f40986914e108af230, type: 3}
 --- !u!1 &3748715856736918352 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -4958002554537561020, guid: a37879bb3cc24434f918e8ed4a1e1731, type: 3}
@@ -6832,7 +6828,6 @@ MonoBehaviour:
   collisionController: {fileID: 2878802703022549329}
   direction: 2
   health: 1
-  crashSound: {fileID: 8300000, guid: 683d4a3c3229e4f40986914e108af230, type: 3}
 --- !u!1 &3794792384960688658 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -4927377428901077754, guid: a37879bb3cc24434f918e8ed4a1e1731, type: 3}
@@ -6929,7 +6924,6 @@ MonoBehaviour:
   collisionController: {fileID: 2878802703022549329}
   direction: 0
   health: 1
-  crashSound: {fileID: 8300000, guid: 683d4a3c3229e4f40986914e108af230, type: 3}
 --- !u!1 &4565626811674509350 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -5734240519153160398, guid: a37879bb3cc24434f918e8ed4a1e1731, type: 3}
@@ -6972,7 +6966,6 @@ MonoBehaviour:
   collisionController: {fileID: 2878802703022549329}
   direction: 1
   health: 1
-  crashSound: {fileID: 8300000, guid: 683d4a3c3229e4f40986914e108af230, type: 3}
 --- !u!1 &5592016176386554627 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4804613825940722711, guid: a37879bb3cc24434f918e8ed4a1e1731, type: 3}
@@ -7015,7 +7008,6 @@ MonoBehaviour:
   collisionController: {fileID: 2878802703022549329}
   direction: 1
   health: 1
-  crashSound: {fileID: 8300000, guid: 683d4a3c3229e4f40986914e108af230, type: 3}
 --- !u!1 &5873667962673301256 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6824301575945496604, guid: a37879bb3cc24434f918e8ed4a1e1731, type: 3}
@@ -7058,7 +7050,6 @@ MonoBehaviour:
   collisionController: {fileID: 2878802703022549329}
   direction: 0
   health: 1
-  crashSound: {fileID: 8300000, guid: 683d4a3c3229e4f40986914e108af230, type: 3}
 --- !u!1 &6896861502739856002 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5800967526154409366, guid: a37879bb3cc24434f918e8ed4a1e1731, type: 3}
@@ -7189,7 +7180,6 @@ MonoBehaviour:
   collisionController: {fileID: 2878802703022549329}
   direction: 0
   health: 1
-  crashSound: {fileID: 8300000, guid: 683d4a3c3229e4f40986914e108af230, type: 3}
 --- !u!1 &7934368245474895152 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -2221622455862490588, guid: a37879bb3cc24434f918e8ed4a1e1731, type: 3}
@@ -7232,7 +7222,6 @@ MonoBehaviour:
   collisionController: {fileID: 2878802703022549329}
   direction: 2
   health: 1
-  crashSound: {fileID: 8300000, guid: 683d4a3c3229e4f40986914e108af230, type: 3}
 --- !u!1 &9146273574897898463 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8203773598355586251, guid: a37879bb3cc24434f918e8ed4a1e1731, type: 3}

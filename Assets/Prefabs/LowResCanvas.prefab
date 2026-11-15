@@ -120,7 +120,9 @@ MonoBehaviour:
   car: {fileID: 0}
   speeder: {fileID: 3082940647255349349}
   distanceText: {fileID: 8917144457874826372}
+  WinSceneName: WinScene
   distanceLeft: 800
+  distanceSubtractionFactor: 0.05
 --- !u!1 &5816003755939732358
 GameObject:
   m_ObjectHideFlags: 0

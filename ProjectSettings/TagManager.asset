@@ -6,6 +6,7 @@ TagManager:
   tags:
   - RenderTextureCamera
   - Car
+  - Obstacle
   layers:
   - Default
   - TransparentFX

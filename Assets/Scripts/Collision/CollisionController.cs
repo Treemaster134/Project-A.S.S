@@ -51,10 +51,12 @@ public class CollisionController : MonoBehaviour
                 }
             }
 
+            
+            
             if (pieceFellOff)
             {
                 explosion.Stop();
-                crashAudioSource.PlayOneShot(explosionSound);
+                crashAudioSource.PlayOneShot(explosionSound, 0.5f);
                 explosion.Play();
             }
             else
@@ -64,6 +66,11 @@ public class CollisionController : MonoBehaviour
             
             codriver.PlayCrashReaction();
 
+            for (int i = 0; i < MaxHitsPerCollision; i++)
+            {
+                components[i] = null;
+            }
+            
             registrations = 0;
         }
 
