@@ -85,10 +85,6 @@ PrefabInstance:
       value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 8520163138267197342, guid: 1760365916a3bf94f9d591f62491b6dd, type: 3}
-      propertyPath: endPoint.x
-      value: -19.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 8520163138267197342, guid: 1760365916a3bf94f9d591f62491b6dd, type: 3}
       propertyPath: runningSpeed
       value: 1
       objectReference: {fileID: 0}

@@ -4825,18 +4825,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3412482292795061398, guid: 33f7da02077f165449aa9b29efd5ac82, type: 3}
-      propertyPath: endPoint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3412482292795061398, guid: 33f7da02077f165449aa9b29efd5ac82, type: 3}
-      propertyPath: endPoint.z
-      value: 12.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3412482292795061398, guid: 33f7da02077f165449aa9b29efd5ac82, type: 3}
-      propertyPath: startPoint.z
-      value: -26.28
-      objectReference: {fileID: 0}
     - target: {fileID: 7160929279782694396, guid: 33f7da02077f165449aa9b29efd5ac82, type: 3}
       propertyPath: m_Name
       value: AntonBaba (6)
@@ -7791,10 +7779,6 @@ PrefabInstance:
     - target: {fileID: 1365772422857777043, guid: 33f7da02077f165449aa9b29efd5ac82, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3412482292795061398, guid: 33f7da02077f165449aa9b29efd5ac82, type: 3}
-      propertyPath: endPoint.x
-      value: 23.2
       objectReference: {fileID: 0}
     - target: {fileID: 7160929279782694396, guid: 33f7da02077f165449aa9b29efd5ac82, type: 3}
       propertyPath: m_Name
@@ -23113,18 +23097,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3412482292795061398, guid: 33f7da02077f165449aa9b29efd5ac82, type: 3}
-      propertyPath: endPoint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3412482292795061398, guid: 33f7da02077f165449aa9b29efd5ac82, type: 3}
-      propertyPath: endPoint.z
-      value: 8.11
-      objectReference: {fileID: 0}
-    - target: {fileID: 3412482292795061398, guid: 33f7da02077f165449aa9b29efd5ac82, type: 3}
-      propertyPath: startPoint.z
-      value: -15.86
-      objectReference: {fileID: 0}
     - target: {fileID: 7160929279782694396, guid: 33f7da02077f165449aa9b29efd5ac82, type: 3}
       propertyPath: m_Name
       value: AntonBaba (7)
@@ -29648,14 +29620,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3412482292795061398, guid: 33f7da02077f165449aa9b29efd5ac82, type: 3}
-      propertyPath: endPoint.x
-      value: -15.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 3412482292795061398, guid: 33f7da02077f165449aa9b29efd5ac82, type: 3}
-      propertyPath: startPoint.x
-      value: 16.49
-      objectReference: {fileID: 0}
     - target: {fileID: 7160929279782694396, guid: 33f7da02077f165449aa9b29efd5ac82, type: 3}
       propertyPath: m_Name
       value: AntonBaba (2)
@@ -30947,14 +30911,6 @@ PrefabInstance:
     - target: {fileID: 1365772422857777043, guid: 33f7da02077f165449aa9b29efd5ac82, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3412482292795061398, guid: 33f7da02077f165449aa9b29efd5ac82, type: 3}
-      propertyPath: endPoint.x
-      value: -16.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 3412482292795061398, guid: 33f7da02077f165449aa9b29efd5ac82, type: 3}
-      propertyPath: startPoint.x
-      value: 27.83
       objectReference: {fileID: 0}
     - target: {fileID: 7160929279782694396, guid: 33f7da02077f165449aa9b29efd5ac82, type: 3}
       propertyPath: m_Name
@@ -52358,18 +52314,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3412482292795061398, guid: 33f7da02077f165449aa9b29efd5ac82, type: 3}
-      propertyPath: endPoint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3412482292795061398, guid: 33f7da02077f165449aa9b29efd5ac82, type: 3}
-      propertyPath: endPoint.z
-      value: 9.97
-      objectReference: {fileID: 0}
-    - target: {fileID: 3412482292795061398, guid: 33f7da02077f165449aa9b29efd5ac82, type: 3}
-      propertyPath: startPoint.z
-      value: -14.56
-      objectReference: {fileID: 0}
     - target: {fileID: 7160929279782694396, guid: 33f7da02077f165449aa9b29efd5ac82, type: 3}
       propertyPath: m_Name
       value: AntonBaba (1)
@@ -58117,22 +58061,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3412482292795061398, guid: 33f7da02077f165449aa9b29efd5ac82, type: 3}
-      propertyPath: endPoint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3412482292795061398, guid: 33f7da02077f165449aa9b29efd5ac82, type: 3}
-      propertyPath: endPoint.y
-      value: 1.02
-      objectReference: {fileID: 0}
-    - target: {fileID: 3412482292795061398, guid: 33f7da02077f165449aa9b29efd5ac82, type: 3}
-      propertyPath: endPoint.z
-      value: -14.22
-      objectReference: {fileID: 0}
-    - target: {fileID: 3412482292795061398, guid: 33f7da02077f165449aa9b29efd5ac82, type: 3}
-      propertyPath: startPoint.z
-      value: 30.4
-      objectReference: {fileID: 0}
     - target: {fileID: 7160929279782694396, guid: 33f7da02077f165449aa9b29efd5ac82, type: 3}
       propertyPath: m_Name
       value: AntonBaba (4)
@@ -59252,18 +59180,6 @@ PrefabInstance:
     - target: {fileID: 1365772422857777043, guid: 33f7da02077f165449aa9b29efd5ac82, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3412482292795061398, guid: 33f7da02077f165449aa9b29efd5ac82, type: 3}
-      propertyPath: endPoint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3412482292795061398, guid: 33f7da02077f165449aa9b29efd5ac82, type: 3}
-      propertyPath: endPoint.z
-      value: 16.94
-      objectReference: {fileID: 0}
-    - target: {fileID: 3412482292795061398, guid: 33f7da02077f165449aa9b29efd5ac82, type: 3}
-      propertyPath: startPoint.z
-      value: -21.88
       objectReference: {fileID: 0}
     - target: {fileID: 7160929279782694396, guid: 33f7da02077f165449aa9b29efd5ac82, type: 3}
       propertyPath: m_Name
