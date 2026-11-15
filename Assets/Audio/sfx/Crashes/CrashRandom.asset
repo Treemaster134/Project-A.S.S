@@ -1,33 +1,13 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1233149941 &-140355817497590119
+--- !u!1233149941 &1382834632279514881
 AudioContainerElement:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: bitcrushed_Crash4_{-140355817497590119}
-  m_AudioClip: {fileID: 8300000, guid: 8cc7d63614dd7354ea462a936f123713, type: 3}
-  m_Volume: 0
-  m_Enabled: 1
---- !u!1233149941 &2276922403318047237
-AudioContainerElement:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: bitcrushed_Crash_{2276922403318047237}
-  m_AudioClip: {fileID: 8300000, guid: 9c9b421f377112e4f84df5859867cd53, type: 3}
-  m_Volume: 0
-  m_Enabled: 1
---- !u!1233149941 &4095368279154826014
-AudioContainerElement:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: bitcrushed_Crash2_{4095368279154826014}
-  m_AudioClip: {fileID: 8300000, guid: 3ac43a8f55c3cfb488df51c26cdbec23, type: 3}
+  m_Name: crash-metal-sweetener-distant-bitcrush_{1382834632279514881}
+  m_AudioClip: {fileID: 8300000, guid: 424fe4a177a241a448d711a68bf011b8, type: 3}
   m_Volume: 0
   m_Enabled: 1
 --- !u!1307931743 &6418180475301049370
@@ -46,10 +26,8 @@ AudioRandomContainer:
   m_AutomaticTriggerTimeRandomizationRange: {x: 0, y: 0}
   m_LoopCountRandomizationRange: {x: 0, y: 0}
   m_Elements:
-  - {fileID: 2276922403318047237}
-  - {fileID: 4095368279154826014}
-  - {fileID: 6567274445825258060}
-  - {fileID: -140355817497590119}
+  - {fileID: 1382834632279514881}
+  - {fileID: 9164174987548085814}
   m_AvoidRepeatingLast: 0
   m_PlaybackMode: 0
   m_TriggerMode: 1
@@ -59,13 +37,13 @@ AudioRandomContainer:
   m_PitchRandomizationEnabled: 0
   m_AutomaticTriggerTimeRandomizationEnabled: 0
   m_LoopCountRandomizationEnabled: 0
---- !u!1233149941 &6567274445825258060
+--- !u!1233149941 &9164174987548085814
 AudioContainerElement:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: bitcrushed_Crash3_{6567274445825258060}
-  m_AudioClip: {fileID: 8300000, guid: ca05571ff6109484a9a5de0fc11f4d95, type: 3}
+  m_Name: metal-crash-bitcrush_{9164174987548085814}
+  m_AudioClip: {fileID: 8300000, guid: 683d4a3c3229e4f40986914e108af230, type: 3}
   m_Volume: 0
   m_Enabled: 1
