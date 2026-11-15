@@ -1,24 +1,68 @@
 using UnityEngine;
 
+enum Direction
+{
+    Left,
+    Right,
+    Up,
+    Back
+}
+
 public class BreakableComponent : CarComponent
 {
+    [SerializeField]
+    Direction direction;
+    Vector3 launchDirection;
+
     [SerializeField] private int health;
+
+    Rigidbody rb;
+
+    bool broken = false;
+
+    private void Update()
+    {
+        if(broken)
+        {
+            rb.AddTorque(Vector3.up * 50f);
+            rb.AddTorque(Vector3.left * 50f);
+
+        }
+    }
     public override void Hit()
     {
         if (--health <= 0)
         {
-            Rigidbody rb = gameObject.AddComponent<Rigidbody>();
-            Vector3 launchDirection = -transform.parent.right.normalized;
-            launchDirection -= transform.parent.forward.normalized * (transform.localPosition.normalized.x * 0.1f);
+            rb = gameObject.AddComponent<Rigidbody>();
+            switch (direction)
+            {
+                case Direction.Left:
+                    launchDirection = transform.forward.normalized;
+                    break;
+                case Direction.Right:
+                    launchDirection = -transform.forward.normalized;
+                    break;
+
+                case Direction.Up:
+                    launchDirection = transform.up.normalized;
+                    break;
+
+                case Direction.Back:
+                    launchDirection = -transform.right.normalized;
+                    break;
+
+            }
             launchDirection.y += 0.5f;
 
             transform.parent = null;
             GetComponent<Collider>().enabled = false;
-            rb.AddForce(launchDirection.normalized * 35f, ForceMode.Impulse);
+            rb.AddForce(launchDirection.normalized * 15f, ForceMode.Impulse);
+            broken = true;
         }
         else
         {
             Debug.Log($"Damaged: {gameObject.name}");
         }
+
     }
 }

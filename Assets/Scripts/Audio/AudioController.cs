@@ -5,26 +5,42 @@ using Random = UnityEngine.Random;
 
 public class AudioController : MonoBehaviour
 {
+    [SerializeField]
     private AudioSource audio;
-    [SerializeField] private AudioClip moveSFX, idleSFX ;
+
+    bool isIdle;
+
+
+    [SerializeField] private AudioClip moveSFX, idleSFX;
     private AudioClip clip;
     void Start()
     {
         audio = GetComponent<AudioSource>();
-    }
+        audio.clip = idleSFX;
+        audio.Play();
 
+    }
 
     private void Update()
     {
-        if((Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S)) && (clip != moveSFX || !audio.isPlaying))
+        isIdle = !Input.GetKey(KeyCode.W) && !Input.GetKey(KeyCode.S);
+        Debug.Log(isIdle);
+
+        if (isIdle && audio.clip != idleSFX)
         {
-            audio.clip = moveSFX;
-            audio.Play();
-        }
-        else if (clip != idleSFX || !audio.isPlaying)
-        {
+            audio.volume = 0.3f;
+            Debug.Log("IT IS IDLE");
             audio.clip = idleSFX;
             audio.Play();
+
+        }
+        else if (!isIdle && audio.clip != moveSFX)
+        {
+            audio.volume = 0.7f;
+            Debug.Log("IT IS MOVING");
+            audio.clip = moveSFX;
+            audio.Play();
+
         }
     }
 }

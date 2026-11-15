@@ -1104,10 +1104,10 @@ MonoBehaviour:
   maxSpeed: 110
   maxReverseSpeed: 45
   accelerationMultiplier: 10
-  maxSteeringAngle: 29
-  steeringSpeed: 1
-  brakeForce: 362
-  decelerationMultiplier: 1
+  maxSteeringAngle: 28
+  steeringSpeed: 0.749
+  brakeForce: 424
+  decelerationMultiplier: 4
   handbrakeDriftMultiplier: 4
   bodyMassCenter: {x: 0, y: 0, z: 0}
   frontLeftMesh: {fileID: 5758521474553552222}
@@ -1125,7 +1125,7 @@ MonoBehaviour:
   RRWTireSkid: {fileID: 6307709982855371519}
   useUI: 0
   carSpeedText: {fileID: 0}
-  useSounds: 0
+  useSounds: 1
   carEngineSound: {fileID: 0}
   tireScreechSound: {fileID: 0}
   useTouchControls: 0
@@ -1615,7 +1615,7 @@ MeshCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 5
@@ -1635,6 +1635,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BreakableComponent
   collisionController: {fileID: 2878802703022549329}
+  direction: 0
   health: 1
 --- !u!4 &629666915872131327 stripped
 Transform:
@@ -1661,7 +1662,7 @@ MeshCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 5
@@ -1681,6 +1682,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BreakableComponent
   collisionController: {fileID: 2878802703022549329}
+  direction: 2
   health: 1
 --- !u!1 &2390492267188348032 stripped
 GameObject:
@@ -1702,7 +1704,7 @@ MeshCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 5
@@ -1722,6 +1724,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BreakableComponent
   collisionController: {fileID: 2878802703022549329}
+  direction: 0
   health: 1
 --- !u!1 &3022022528871142970 stripped
 GameObject:
@@ -1743,7 +1746,7 @@ MeshCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 5
@@ -1763,6 +1766,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BreakableComponent
   collisionController: {fileID: 2878802703022549329}
+  direction: 1
   health: 1
 --- !u!1 &3748715856736918352 stripped
 GameObject:
@@ -1784,7 +1788,7 @@ MeshCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 5
@@ -1804,6 +1808,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BreakableComponent
   collisionController: {fileID: 2878802703022549329}
+  direction: 2
   health: 1
 --- !u!1 &3794792384960688658 stripped
 GameObject:
@@ -1879,7 +1884,7 @@ MeshCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 5
@@ -1899,6 +1904,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BreakableComponent
   collisionController: {fileID: 2878802703022549329}
+  direction: 0
   health: 1
 --- !u!1 &4565626811674509350 stripped
 GameObject:
@@ -1920,7 +1926,7 @@ MeshCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 5
@@ -1940,6 +1946,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BreakableComponent
   collisionController: {fileID: 2878802703022549329}
+  direction: 1
   health: 1
 --- !u!1 &5592016176386554627 stripped
 GameObject:
@@ -1961,7 +1968,7 @@ MeshCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 5
@@ -1981,6 +1988,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BreakableComponent
   collisionController: {fileID: 2878802703022549329}
+  direction: 1
   health: 1
 --- !u!1 &5873667962673301256 stripped
 GameObject:
@@ -2002,7 +2010,7 @@ MeshCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 5
@@ -2022,6 +2030,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BreakableComponent
   collisionController: {fileID: 2878802703022549329}
+  direction: 0
   health: 1
 --- !u!1 &6896861502739856002 stripped
 GameObject:
@@ -2043,7 +2052,7 @@ MeshCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 5
@@ -2063,6 +2072,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BreakableComponent
   collisionController: {fileID: 2878802703022549329}
+  direction: 2
   health: 1
 --- !u!1 &7338875906615201332 stripped
 GameObject:
@@ -2084,7 +2094,7 @@ MeshCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 5
@@ -2104,6 +2114,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BreakableComponent
   collisionController: {fileID: 2878802703022549329}
+  direction: 1
   health: 1
 --- !u!1 &7541013708950811467 stripped
 GameObject:
@@ -2125,7 +2136,7 @@ MeshCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 5
@@ -2145,6 +2156,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BreakableComponent
   collisionController: {fileID: 2878802703022549329}
+  direction: 0
   health: 1
 --- !u!1 &7934368245474895152 stripped
 GameObject:
@@ -2166,7 +2178,7 @@ MeshCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 5
@@ -2186,6 +2198,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BreakableComponent
   collisionController: {fileID: 2878802703022549329}
+  direction: 2
   health: 1
 --- !u!1 &9146273574897898463 stripped
 GameObject:
