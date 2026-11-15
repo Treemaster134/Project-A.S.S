@@ -1241,6 +1241,14 @@ PrefabInstance:
       propertyPath: MultiplierUpperBound
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 2878802703022549329, guid: 5bc972e9c15311a46be04e16fd7c8fa5, type: 3}
+      propertyPath: componentsLeft
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 3447232882221739534, guid: 5bc972e9c15311a46be04e16fd7c8fa5, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7670450108940486571, guid: 5bc972e9c15311a46be04e16fd7c8fa5, type: 3}
       propertyPath: m_LocalPosition.x
       value: 128.6
@@ -1294,8 +1302,16 @@ PrefabInstance:
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8637281246211221595, guid: 5bc972e9c15311a46be04e16fd7c8fa5, type: 3}
+      propertyPath: minBrakeSpeed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8637281246211221595, guid: 5bc972e9c15311a46be04e16fd7c8fa5, type: 3}
       propertyPath: BaseBrakeSpeed
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8841903966019808365, guid: 5bc972e9c15311a46be04e16fd7c8fa5, type: 3}
+      propertyPath: decelerationMultiplier
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -25460,6 +25476,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Terrain
       objectReference: {fileID: 0}
+    - target: {fileID: 7552900241568169486, guid: 308065ee0c0f4114a8ef3f6621bc8412, type: 3}
+      propertyPath: m_TerrainData
+      value: 
+      objectReference: {fileID: 15600000, guid: 102dd51d0b6178941abb3eff4be009b5, type: 2}
     - target: {fileID: 9128346834013535063, guid: 308065ee0c0f4114a8ef3f6621bc8412, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
