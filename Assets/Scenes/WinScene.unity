@@ -1101,7 +1101,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "WELCOME TO PYH\xC4NJOKI!!"
+  m_text: "WELCOME TO PYH\xC4JOKI!!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0c6fc0973ffb1c245aa9415862ac9497, type: 2}
   m_sharedMaterial: {fileID: -3247957409003553090, guid: 0c6fc0973ffb1c245aa9415862ac9497, type: 2}

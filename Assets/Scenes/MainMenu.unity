@@ -401,7 +401,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11ee95d0b607ab34090fea9854288c56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  sceneName: SampleScene
+  sceneName: MainLevelScene
   enterActionName: Enter
   startTriggerName: Start
   ready: 0

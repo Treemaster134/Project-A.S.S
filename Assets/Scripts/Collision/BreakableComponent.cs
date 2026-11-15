@@ -26,10 +26,9 @@ public class BreakableComponent : CarComponent
         {
             rb.AddTorque(Vector3.up * 50f);
             rb.AddTorque(Vector3.left * 50f);
-
         }
     }
-    public override void Hit()
+    public override bool Hit()
     {
         if (--health <= 0)
         {
@@ -64,5 +63,6 @@ public class BreakableComponent : CarComponent
             Debug.Log($"Damaged: {gameObject.name}");
         }
 
+        return broken;
     }
 }

@@ -11,9 +11,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5e035f23-90dd-49bf-8ea5-c9901aaaf572" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Project-A.S.S/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Project-A.S.S/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/LevelScene 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/LevelScene 1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Car/PrometeoWhisperer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Car/PrometeoWhisperer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Win/Idle.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Win/Idle.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Collision/BreakableComponent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Collision/BreakableComponent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Collision/CarComponent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Collision/CarComponent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Collision/CollisionController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Collision/CollisionController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Collision/MultiplierComponent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Collision/MultiplierComponent.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
