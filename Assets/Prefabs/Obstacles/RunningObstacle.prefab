@@ -160,6 +160,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c330f798929437144baf5c0578dceef2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Billboard
+  cam: {fileID: 0}
+  rotate: 1
 --- !u!65 &702245092354654033
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -234,3 +236,5 @@ MonoBehaviour:
   pauseAnimationBool: 
   carTag: 
   waitTime: 0
+  spinning: 0
+  billboard: {fileID: 0}
