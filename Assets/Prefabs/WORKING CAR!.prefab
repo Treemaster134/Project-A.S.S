@@ -5990,6 +5990,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CollisionController
   MaxHitsPerCollision: 1
+  componentsLeft: 0
+  minimumComponentsLeft: 4
+  GameOverSceneName: GameOverScene
 --- !u!114 &1891112036174734637
 MonoBehaviour:
   m_ObjectHideFlags: 0

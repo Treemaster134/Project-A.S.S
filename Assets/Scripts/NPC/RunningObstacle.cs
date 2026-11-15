@@ -15,24 +15,25 @@ public class RunningObstacle : MonoBehaviour
     private float animationTimer = 0.0f;
     public bool spinning = false;
 
-    Rigidbody rb;
+    public Billboard billboard;
 
     // Update is called once per frame
     void Update()
     {
         if (spinning)
         {
-            rb.AddTorque(Vector3.up * 50f);
-            rb.AddTorque(Vector3.left * 50f);
+            // rb.AddTorque(Vector3.up * 500f);
+            // rb.AddTorque(Vector3.left * 50f);
 
 
-            // sprite.transform.position = sprite.transform.position + Vector3.up * (spinSpeed * Time.deltaTime);
+            sprite.transform.position += Vector3.up * (spinSpeed * Time.deltaTime);
+            sprite.transform.Rotate(Vector3.right * 600 * Time.deltaTime);
             animationTimer += Time.deltaTime;
 
-            if (animationTimer >= 1.0f)
-            {
-                gameObject.SetActive(false);
-            }
+            // if (animationTimer >= 1.0f)
+            // {
+            //     gameObject.SetActive(false);
+            // }
         }
         else
         {
@@ -55,7 +56,8 @@ public class RunningObstacle : MonoBehaviour
     public void Spin()
     {
         Debug.Log("Spinning obstacle");
-        rb.isKinematic = false;
+        billboard = GetComponentInChildren<Billboard>();
+        billboard.rotate = false;
         animationTimer = 0.0f;
         spinning = true;
     }
