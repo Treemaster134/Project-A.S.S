@@ -13,14 +13,20 @@ public class RunningObstacle : MonoBehaviour
     [SerializeField, Tooltip("How long to pause in the middle.")] private float waitTime;
     private float progress = 0.0f;
     private float animationTimer = 0.0f;
-    private bool spinning = false;
+    public bool spinning = false;
+
+    Rigidbody rb;
 
     // Update is called once per frame
     void Update()
     {
         if (spinning)
         {
-            sprite.transform.position = sprite.transform.position + Vector3.up * (spinSpeed * Time.deltaTime);
+            rb.AddTorque(Vector3.up * 50f);
+            rb.AddTorque(Vector3.left * 50f);
+
+
+            // sprite.transform.position = sprite.transform.position + Vector3.up * (spinSpeed * Time.deltaTime);
             animationTimer += Time.deltaTime;
 
             if (animationTimer >= 1.0f)
@@ -46,14 +52,12 @@ public class RunningObstacle : MonoBehaviour
         
     }
 
-    private void OnCollisionEnter(Collision collision)
+    public void Spin()
     {
-        if (collision.gameObject.tag == carTag)
-        {
-            gameObject.GetComponent<Collider>().enabled = false;
-            animationTimer = 0.0f;
-            spinning = true;
-        }
+        Debug.Log("Spinning obstacle");
+        rb.isKinematic = false;
+        animationTimer = 0.0f;
+        spinning = true;
     }
 
     private void OnDrawGizmosSelected()
